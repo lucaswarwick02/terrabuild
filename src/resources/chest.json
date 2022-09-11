@@ -1,0 +1,22 @@
+[
+  {
+    "itemID": 0,
+    "name": "None",
+    "defence": 0
+  },
+  {
+    "itemID": 410,
+    "name": "Mining Shirt",
+    "defence": 1
+  },
+  {
+    "itemID": 728,
+    "name": "Wood Breastplate",
+    "defence": 1
+  },
+  {
+    "itemID": 734,
+    "name": "Rich Mahogany Breastplate",
+    "defence": 1
+  }
+]

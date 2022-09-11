@@ -1,0 +1,22 @@
+[
+  {
+    "itemID": 0,
+    "name": "None",
+    "defence": 0
+  },
+  {
+    "itemID": "411",
+    "name": "Mining Pants",
+    "defence": 1
+  },
+  {
+    "itemID": "729",
+    "name": "Wood Greaves",
+    "defence": 0
+  },
+  {
+    "itemID": "735",
+    "name": "Rich Mahogany Greaves",
+    "defence": 1
+  }
+]

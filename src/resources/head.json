@@ -1,0 +1,22 @@
+[
+  {
+    "itemID": 0,
+    "name": "None",
+    "defence": 0
+  },
+  {
+    "itemID": 88,
+    "name": "Mining Helmet",
+    "defence": 1
+  },
+  {
+    "itemID": 727,
+    "name": "Wood Helmet",
+    "defence": 1
+  },
+  {
+    "itemID": 733,
+    "name": "Rich Mahogany Helmet",
+    "defence": 1
+  }
+]
