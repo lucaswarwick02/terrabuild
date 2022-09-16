@@ -1,0 +1,36 @@
+@font-face {
+    font-family: TerrariaFont;
+    src: url("../resources/ANDYB.TTF");
+}
+
+#buildSummary {
+    background-color: #939393;
+    height: 35vh;
+    text-align: center;
+    font-family: TerrariaFont;
+}
+#buildSummary h3 {
+    margin: 0;
+    font-size: 5vh;
+}
+#buildSummary p {
+    margin: 0;
+    font-size: 3.5vh;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}

@@ -2,21 +2,25 @@
   {
     "itemID": 0,
     "name": "None",
-    "defence": 0
+    "defence": 0,
+    "bonus": ""
   },
   {
-    "itemID": "411",
+    "itemID": 411,
     "name": "Mining Pants",
-    "defence": 1
+    "defence": 1,
+    "bonus": ""
   },
   {
-    "itemID": "729",
+    "itemID": 729,
     "name": "Wood Greaves",
-    "defence": 0
+    "defence": 0,
+    "bonus": ""
   },
   {
-    "itemID": "735",
+    "itemID": 735,
     "name": "Rich Mahogany Greaves",
-    "defence": 1
+    "defence": 1,
+    "bonus": ""
   }
 ]

@@ -1,0 +1,15 @@
+@font-face {
+    font-family: TerrariaFont;
+    src: url("../resources/ANDYB.TTF");
+}
+
+#header {
+    background-color: #e0e0e0;
+    height: 5vh;
+    text-align: center;
+    font-family: TerrariaFont;
+}
+#header h1 {
+    margin: 0;
+    font-size: 5vh;
+}

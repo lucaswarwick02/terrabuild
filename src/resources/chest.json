@@ -2,21 +2,25 @@
   {
     "itemID": 0,
     "name": "None",
-    "defence": 0
+    "defence": 0,
+    "bonus": ""
   },
   {
     "itemID": 410,
     "name": "Mining Shirt",
-    "defence": 1
+    "defence": 1,
+    "bonus": ""
   },
   {
     "itemID": 728,
     "name": "Wood Breastplate",
-    "defence": 1
+    "defence": 1,
+    "bonus": ""
   },
   {
     "itemID": 734,
     "name": "Rich Mahogany Breastplate",
-    "defence": 1
+    "defence": 1,
+    "bonus": ""
   }
 ]
