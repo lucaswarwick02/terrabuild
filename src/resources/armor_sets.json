@@ -1,17 +1,17 @@
 [
   {
     "set": [88, 410, 411],
-    "setBonus": "+30% mining speed",
-    "setEffect": ""
+    "bonus": "+30% mining speed",
+    "effect": ""
   },
   {
     "set": [727, 728, 729],
-    "setBonus": "+1 defense",
-    "setEffect": ""
+    "bonus": "+1 defense",
+    "effect": ""
   },
   {
     "set": [733, 734, 735],
-    "setBonus": "+1 defense",
-    "setEffect": ""
+    "bonus": "+1 defense",
+    "effect": ""
   }
 ]

@@ -26,12 +26,11 @@
     align-content: center;
 }
 
-div.scroll {
-    background-color: #fed9ff;
-    width: 80vw;
-    height: 30vh;
-    overflow-x: hidden;
-    overflow-y: auto;
-    text-align: center;
-    padding: 20px;
+.itemButton {
+
+    cursor: pointer;
+    font-family: TerrariaFont, serif;
+    background: none;
+    border: none;
+    font-size: 5vh;
 }

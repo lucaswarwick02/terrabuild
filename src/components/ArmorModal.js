@@ -1,65 +1,41 @@
 import React from 'react';
 import '../css/ArmorModal.css';
+import { headData, chestData, legsData} from './JsonManager'
 
 function ArmorModal(props) {
     function handleClose () {
         document.getElementById("armorModal").style.display = "none";
     }
-
-    const getTypeName = () => {
-        switch (props.modalType) {
-            case "head":
-                return "head";
-            case "chest":
-                return "chest";
-            case "legs":
-                return "legs";
-            default:
-                return "head";
-        }
-    }
-
-    const getTypeValue = () => {
-        switch (props.modalType) {
-            case "head":
-                return props.data.head;
-            case "chest":
-                return props.data.chest;
-            case "legs":
-                return props.data.legs;
-            default:
-                return props.data.head;
-        }
-    }
-
+    
     const getItems = () => {
         switch (props.modalType) {
             case "head":
-                return props.headData;
+                return headData;
             case "chest":
-                return props.chestData;
+                return chestData;
             case "legs":
-                return props.legsData;
+                return legsData;
             default:
-                return props.headData;
+                return headData;
         }
     }
+
+    // Updates the stored armor information
+    const handleArmorChange = event => {
+        props.setData( prev => ({
+            ...prev,
+            [event.target.name]: parseInt(event.target.value)
+        }));
+        handleClose();
+    };
 
     return (
         <div id="armorModal">
             <div id="armorModalContent">
-                <h1>{getTypeName()} Modal</h1>
-                <button id="modal-btn" onClick={handleClose}>Close Model</button>
-                <div id="armorSelection">
-                    <label htmlFor={getTypeName()}>{getTypeName()}</label>
-                    <select value={getTypeValue()} name={getTypeName()} onChange={props.handleArmorChange}>
-                        {getItems().map(item => (
-                            <option key={item.itemID} value={item.itemID}>
-                                {item.name}
-                            </option>
-                        ))}
-                    </select>
-                </div>
+                <h1>{props.modalType} Modal</h1>
+                {getItems().map(item => (
+                    <button className="itemButton" key={item.itemID} name={props.modalType} value={item.itemID} onClick={handleArmorChange} >{item.name}</button>
+                ))}
             </div>
         </div>
     );
