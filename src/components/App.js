@@ -7,6 +7,7 @@ import React, { useState, useEffect } from 'react';
 
 import BuildSummary from "./BuildSummary"
 import Header from "./Header";
+import ArmorModal from "./ArmorModal";
 
 function App() {
     // * isLoading is used for making sure that content isn't rendered
@@ -28,6 +29,8 @@ function App() {
         legs: 0
     });
 
+    const [armorModalType, setArmorModalType] = useState("head");
+
     // Loads the JSON data into variables after initial mount
     useEffect(() => {
         setHeadData(JSON.parse(JSON.stringify(headJsonData)));
@@ -47,52 +50,28 @@ function App() {
         }));
     };
 
+    const armorModalClick = armorModalType => () => {
+        setArmorModalType(armorModalType);
+        document.getElementById("armorModal").style.display = "block";
+    }
+
     if (!isLoading) {
         return (
             <div className="App">
                 <Header />
                 <div id="buildSelection">
-                    <button id="modal-btn" onClick={() => {document.getElementById("modal-row-1").style.display = "block";}}>Open Model</button>
-                    <div id="modal-row-1" className="modal">
-                        <div className="modal-content">
-                            <button className="close" onClick={() => {document.getElementById("modal-row-1").style.display = "none";}}>&times;</button>
-                            <p>Modal 1</p>
-                        </div>
-                    </div>
-                    <form>
-                        <div id="armorSelection">
-                            <div id="headSelection">
-                                <label htmlFor="head">Head</label>
-                                <select value={data.head} name="head" onChange={handleArmorChange}>
-                                    {headData.map(item => (
-                                        <option key={item.itemID} value={item.itemID}>
-                                            {item.name}
-                                        </option>
-                                    ))}
-                                </select>
-                            </div>
-                            <div id="chestSelection">
-                                <label htmlFor="head">Chest</label>
-                                <select value={data.chest} name="chest" onChange={handleArmorChange}>
-                                    {chestData.map(item => (
-                                        <option key={item.itemID} value={item.itemID}>
-                                            {item.name}
-                                        </option>
-                                    ))}
-                                </select>
-                            </div>
-                            <div id="legsSelection">
-                                <label htmlFor="legs">Legs</label>
-                                <select value={data.legs} name="legs" onChange={handleArmorChange}>
-                                    {legsData.map(item => (
-                                        <option key={item.itemID} value={item.itemID}>
-                                            {item.name}
-                                        </option>
-                                    ))}
-                                </select>
-                            </div>
-                        </div>
-                    </form>
+                    <button id="modal-btn" onClick={armorModalClick("head")}>Select Head</button>
+                    <button id="modal-btn" onClick={armorModalClick("chest")}>Select Chest</button>
+                    <button id="modal-btn" onClick={armorModalClick("legs")}>Select Legs</button>
+                    <ArmorModal
+                        data={data}
+                        setData={setData}
+                        handleArmorChange={handleArmorChange}
+                        headData={headData}
+                        chestData={chestData}
+                        legsData={legsData}
+                        modalType={armorModalType}
+                    />
                 </div>
                 <BuildSummary data={data} headData={headData} chestData={chestData} legsData={legsData} armorSetsData={armorSetsData} />
             </div>
