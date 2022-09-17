@@ -3,10 +3,18 @@ import '../css/ArmorModal.css';
 import { headData, chestData, legsData} from './JsonManager'
 
 function ArmorModal(props) {
+
+    /**
+     * Removes the Modal
+     */
     function handleClose () {
         document.getElementById("armorModal").style.display = "none";
     }
-    
+
+    /**
+     * Get a certain set of items depending on the
+     * @returns {ArmorItem[]} - Array of JSON objects for Armor Items
+     */
     const getItems = () => {
         switch (props.modalType) {
             case "head":
@@ -20,7 +28,10 @@ function ArmorModal(props) {
         }
     }
 
-    // Updates the stored armor information
+    /**
+     * Updates the stored armor information
+     * @param event - From the HTMLElement, used for determining values
+     */
     const handleArmorChange = event => {
         props.setData( prev => ({
             ...prev,

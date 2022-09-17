@@ -4,9 +4,21 @@ import { queryHead, queryChest, queryLegs, querySetBonus, querySetEffect } from 
 
 function BuildSummary(props) {
 
+    /**
+     * Sum together the defence of each Armor piece
+     * @type {Number}
+     */
     const totalArmor = queryHead(props.data.head).defence + queryChest(props.data.chest).defence + queryLegs(props.data.legs).defence;
 
+    /**
+     * Query JSON for the Set Bonus
+     * @type {String|null}
+     */
     const setBonus = querySetBonus(props.data.head, props.data.chest, props.data.legs);
+    /**
+     * Query JSON for the Set Effect
+     * @type {String|null}
+     */
     const setEffect = querySetEffect(props.data.head, props.data.chest, props.data.legs);
 
     return (

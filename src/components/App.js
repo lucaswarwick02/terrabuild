@@ -5,7 +5,6 @@ import ArmorModal from "./ArmorModal";
 import '../css/App.css';
 import {queryChest, queryHead, queryLegs} from "./JsonManager";
 
-
 function App() {
     // * isLoading is used for making sure that content isn't rendered
     // * until the JSON data is loaded.
@@ -24,6 +23,11 @@ function App() {
         setIsLoading(false);
     }, []);
 
+    /**
+     * Update the type of Armor Modal displayed
+     * @param {String} armorModalType - Either "head", "chest" or "legs"
+     * @returns {(function(): void)} - Required to work with onClick
+     */
     const armorModalClick = armorModalType => () => {
         setArmorModalType(armorModalType);
         document.getElementById("armorModal").style.display = "block";

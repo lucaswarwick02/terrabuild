@@ -5,34 +5,34 @@ import armorSetsJsonData from '../resources/armor_sets.json'
 
 /**
  * ArmorItem config
- * @typedef {Object} ArmorItem
- * @property {Number} itemID
- * @property {String} name
- * @property {Number} defence
- * @property {String} bonus
+ * @typedef {Object} ArmorItem - A Terraria item
+ * @property {Number} itemID - Internal ID of the item
+ * @property {String} name - Vanity name of the item
+ * @property {Number} defence - Number of defence points
+ * @property {String} bonus - Bonus the item gives, not the complete set
  */
 
 /**
  * ArmorSetType config
- * @typedef {Object} ArmorSetType
- * @property {Number[]} set
- * @property {String} bonus
- * @property {String} effect
+ * @typedef {Object} ArmorSetType - Set bonus for an Armor Set
+ * @property {Number[]} set - List of IDs for the Armor Set
+ * @property {String} bonus - Set Bonus
+ * @property {String} effect - Set Effect
  */
 
-/** @type {ArmorSetType} */
+/** @type {ArmorItem[]} */
 export const headData = JSON.parse(JSON.stringify(headJsonData));
-/** @type {ArmorSetType} */
+/** @type {ArmorItem[]} */
 export const chestData = JSON.parse(JSON.stringify(chestJsonData));
-/** @type {ArmorSetType} */
+/** @type {ArmorItem[]} */
 export const legsData = JSON.parse(JSON.stringify(legsJsonData));
-/** @type {ArmorSetType} */
+/** @type {ArmorSetType[]} */
 export const armorSetsData = JSON.parse(JSON.stringify(armorSetsJsonData));
 
 /**
  *
- * @param {Number} id
- * @returns {ArmorItem}
+ * @param {Number} id - Internal ID of the item
+ * @returns {ArmorItem} - JSON Armor Item
  */
 export function queryHead(id) {
     for (const item of headData) {
@@ -45,8 +45,8 @@ export function queryHead(id) {
 
 /**
  *
- * @param {Number} id
- * @returns {ArmorItem}
+ * @param {Number} id - Internal ID of the item
+ * @returns {ArmorItem} - JSON Armor Item
  */
 export function queryChest(id) {
     for (const item of chestData) {
@@ -59,8 +59,8 @@ export function queryChest(id) {
 
 /**
  *
- * @param {Number} id
- * @returns {ArmorItem}
+ * @param {Number} id - Internal ID of the item
+ * @returns {ArmorItem} - JSON Armor Item
  */
 export function queryLegs(id) {
     for (const item of legsData) {
@@ -73,10 +73,10 @@ export function queryLegs(id) {
 
 /**
  *
- * @param {Number} headID
- * @param {Number} chestID
- * @param {Number} legsID
- * @returns {String|null}
+ * @param {Number} headID - Internal ID of the head item
+ * @param {Number} chestID - Internal ID of the chest item
+ * @param {Number} legsID - Internal ID of the legs item
+ * @returns {String|null} - Either return the Set Bonus, or null
  */
 export function querySetBonus(headID, chestID, legsID) {
     let armorSet = [headID, chestID, legsID];
@@ -91,10 +91,10 @@ export function querySetBonus(headID, chestID, legsID) {
 
 /**
  *
- * @param {Number} headID
- * @param {Number} chestID
- * @param {Number} legsID
- * @returns {String|null}
+ * @param {Number} headID - Internal ID of the head item
+ * @param {Number} chestID - Internal ID of the chest item
+ * @param {Number} legsID - Internal ID of the legs item
+ * @returns {String|null} - Either return the Set Effect, or null
  */
 export function querySetEffect(headID, chestID, legsID) {
     let armorSet = [headID, chestID, legsID];
