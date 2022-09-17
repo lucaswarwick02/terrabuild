@@ -32,12 +32,31 @@ function ArmorModal(props) {
      * Updates the stored armor information
      * @param event - From the HTMLElement, used for determining values
      */
-    const handleArmorChange = event => {
+    const handleArmorChange = (name, value) => {
         props.setData( prev => ({
             ...prev,
-            [event.target.name]: parseInt(event.target.value)
+            [name]: parseInt(value)
         }));
         handleClose();
+    };
+
+    /**
+     *
+     * @param {ArmorItem} item - JSON Object of an Armor Item
+     * @returns {JSX.Element} - Item Display
+     */
+    const createItemDisplay = item => {
+        return (
+            <div key={item.itemID}
+                 className="itemDisplay"
+                 onClick={() => {handleArmorChange(props.modalType, item.itemID)}}>
+                <div className="itemImageContainer">
+                    <img className="itemImage" src={`${process.env.PUBLIC_URL}/images/${item.itemID}.png`}
+                         alt={item.name}/>
+                </div>
+                <span className="itemCaption">{item.name}</span>
+            </div>
+        );
     };
 
     return (
@@ -45,7 +64,7 @@ function ArmorModal(props) {
             <div id="armorModalContent">
                 <h1>{props.modalType} Modal</h1>
                 {getItems().map(item => (
-                    <button className="itemButton" key={item.itemID} name={props.modalType} value={item.itemID} onClick={handleArmorChange} >{item.name}</button>
+                    createItemDisplay(item)
                 ))}
             </div>
         </div>

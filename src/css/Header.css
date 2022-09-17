@@ -4,12 +4,13 @@
 }
 
 #header {
-    background-color: #e0e0e0;
+    background-color: var(--surface);
     height: 5vh;
     text-align: center;
-    font-family: TerrariaFont;
+    font-family: TerrariaFont, serif;
 }
 #header h1 {
     margin: 0;
     font-size: 5vh;
+    color: var(--on-surface)
 }

@@ -1,3 +1,14 @@
+:root {
+  --background: #121212;
+  --surface: #1e1e1e;
+  --primary: #73ff56;
+  --secondary: #03dac6;
+  --on-background: #dddddd;
+  --on-surface: #e2e2e2;
+  --on-primary: #050307;
+  --on-secondary: #000303;
+}
+
 @font-face {
   font-family: TerrariaFont;
   src: url("../resources/ANDYB.TTF");
@@ -5,19 +16,10 @@
 
 #buildSelection {
   font-family: TerrariaFont, serif;
-  background-color: #b8b8b8;
+  background-color: var(--background);
   height: 60vh;
   font-size: 3vh;
 }
-
-#armorSelection {
-  vertical-align: center;
-}
-
-#headSelection {}
-#chestSelection {}
-#legsSelection {}
-
 
 select {
   font-family: TerrariaFont, serif;

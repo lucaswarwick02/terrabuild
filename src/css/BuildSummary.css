@@ -4,29 +4,30 @@
 }
 
 #buildSummary {
-    background-color: #939393;
+    background-color: var(--surface);
     height: 35vh;
     text-align: center;
-    font-family: TerrariaFont;
+    font-family: TerrariaFont, serif;
 }
 #buildSummary h3 {
     margin: 0;
     font-size: 5vh;
+    color: var(--on-surface)
 }
 #buildSummary p {
     margin: 0;
     font-size: 3.5vh;
+    color: var(--on-surface);
 }
 
 .tooltip .tooltiptext {
     visibility: hidden;
     width: 120px;
     background-color: black;
-    color: #fff;
+    color: var(--on-surface);
     text-align: center;
     border-radius: 6px;
     padding: 5px 0;
-
     position: absolute;
     z-index: 1;
 }
