@@ -2,24 +2,28 @@
   {
     "itemID": 0,
     "name": "None",
+    "rarity": -1,
     "defence": 0,
     "bonus": ""
   },
   {
     "itemID": 411,
     "name": "Mining Pants",
+    "rarity": 1,
     "defence": 1,
     "bonus": ""
   },
   {
     "itemID": 729,
     "name": "Wood Greaves",
+    "rarity": 0,
     "defence": 0,
     "bonus": ""
   },
   {
     "itemID": 735,
     "name": "Rich Mahogany Greaves",
+    "rarity": 0,
     "defence": 1,
     "bonus": ""
   }

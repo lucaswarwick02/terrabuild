@@ -25,40 +25,6 @@
     width: 80vw; /* Could be more or less, depending on screen size */
     height: 80vh;
     align-content: center;
-    box-shadow: 0 0 0 2px var(--primary); /* emulate the border */
-}
-
-.itemDisplay {
-    background-color: var(--surface);
-    font-family: TerrariaFont, serif;
-    color: var(--on-surface);
-    width: 10vw;
-    aspect-ratio: 1 / 1;
-    border: var(--on-background) solid 3px;
-    border-radius: 10px;
-    cursor: pointer;
-
-    vertical-align: top;
-    display: inline-block;
-    text-align: center;
-}
-
-.itemImageContainer {
-    padding-top: 2vh;
-    width: 5.5vw;
-    aspect-ratio: 1 / 1;
-    margin: 0 auto;
-    display: block;
-}
-
-.itemImage {
-    width: 100%;
-    image-rendering: pixelated;
-}
-
-.itemCaption {
-    font-family: TerrariaFont, serif;
-    color: var(--on-surface);
-    display: block;
-    font-size: 3.5vh;
+    text-align:center;
+    box-shadow: 0 0 0 2px var(--on-background); /* emulate the border */
 }

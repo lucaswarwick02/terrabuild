@@ -2,24 +2,28 @@
   {
     "itemID": 0,
     "name": "None",
+    "rarity": -1,
     "defence": 0,
     "bonus": ""
   },
   {
     "itemID": 88,
     "name": "Mining Helmet",
+    "rarity": 1,
     "defence": 1,
     "bonus": "Helmet piece emits light."
   },
   {
     "itemID": 727,
     "name": "Wood Helmet",
+    "rarity": 0,
     "defence": 1,
     "bonus": ""
   },
   {
     "itemID": 733,
     "name": "Rich Mahogany Helmet",
+    "rarity": 0,
     "defence": 1,
     "bonus": ""
   }

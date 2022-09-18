@@ -8,6 +8,7 @@ import armorSetsJsonData from '../resources/armor_sets.json'
  * @typedef {Object} ArmorItem - A Terraria item
  * @property {Number} itemID - Internal ID of the item
  * @property {String} name - Vanity name of the item
+ * @property {Number} rarity - Rarity used for color of the item
  * @property {Number} defence - Number of defence points
  * @property {String} bonus - Bonus the item gives, not the complete set
  */

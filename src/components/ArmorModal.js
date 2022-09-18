@@ -1,6 +1,8 @@
 import React from 'react';
-import '../css/ArmorModal.css';
+import ArmorItem from './ArmorItem'
 import { headData, chestData, legsData} from './JsonManager'
+import { originalSort } from "../HelperFunctions"
+import '../css/ArmorModal.css';
 
 function ArmorModal(props) {
 
@@ -18,13 +20,13 @@ function ArmorModal(props) {
     const getItems = () => {
         switch (props.modalType) {
             case "head":
-                return headData;
+                return headData.sort(originalSort);
             case "chest":
-                return chestData;
+                return chestData.sort(originalSort);
             case "legs":
-                return legsData;
+                return legsData.sort(originalSort);
             default:
-                return headData;
+                return headData.sort(originalSort);
         }
     }
 
@@ -40,31 +42,12 @@ function ArmorModal(props) {
         handleClose();
     };
 
-    /**
-     *
-     * @param {ArmorItem} item - JSON Object of an Armor Item
-     * @returns {JSX.Element} - Item Display
-     */
-    const createItemDisplay = item => {
-        return (
-            <div key={item.itemID}
-                 className="itemDisplay"
-                 onClick={() => {handleArmorChange(props.modalType, item.itemID)}}>
-                <div className="itemImageContainer">
-                    <img className="itemImage" src={`${process.env.PUBLIC_URL}/images/${item.itemID}.png`}
-                         alt={item.name}/>
-                </div>
-                <span className="itemCaption">{item.name}</span>
-            </div>
-        );
-    };
-
     return (
         <div id="armorModal">
             <div id="armorModalContent">
-                <h1>{props.modalType} Modal</h1>
+                <h1>Armor Modal</h1>
                 {getItems().map(item => (
-                    createItemDisplay(item)
+                    <ArmorItem key={item.itemID} onClick={() => handleArmorChange(props.modalType, item.itemID)} item={item} />
                 ))}
             </div>
         </div>

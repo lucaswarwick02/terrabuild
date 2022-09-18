@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react';
 import BuildSummary from "./BuildSummary"
 import Header from "./Header";
 import ArmorModal from "./ArmorModal";
-import '../css/App.css';
+import ArmorItem from "./ArmorItem"
 import {queryChest, queryHead, queryLegs} from "./JsonManager";
+import '../css/App.css';
 
 function App() {
     // * isLoading is used for making sure that content isn't rendered
@@ -38,9 +39,9 @@ function App() {
             <div className="App">
                 <Header />
                 <div id="buildSelection">
-                    <button id="modal-btn" onClick={armorModalClick("head")}>{queryHead(data.head).name}</button>
-                    <button id="modal-btn" onClick={armorModalClick("chest")}>{queryChest(data.chest).name}</button>
-                    <button id="modal-btn" onClick={armorModalClick("legs")}>{queryLegs(data.legs).name}</button>
+                    <ArmorItem onClick={armorModalClick("head")} item={queryHead(data.head)} />
+                    <ArmorItem onClick={armorModalClick("chest")} item={queryChest(data.chest)} />
+                    <ArmorItem onClick={armorModalClick("legs")} item={queryLegs(data.legs)} />
                     <ArmorModal
                         data={data}
                         setData={setData}

@@ -2,24 +2,28 @@
   {
     "itemID": 0,
     "name": "None",
+    "rarity": -1,
     "defence": 0,
     "bonus": ""
   },
   {
     "itemID": 410,
     "name": "Mining Shirt",
+    "rarity": 1,
     "defence": 1,
     "bonus": ""
   },
   {
     "itemID": 728,
     "name": "Wood Breastplate",
+    "rarity": 0,
     "defence": 1,
     "bonus": ""
   },
   {
     "itemID": 734,
     "name": "Rich Mahogany Breastplate",
+    "rarity": 0,
     "defence": 1,
     "bonus": ""
   }

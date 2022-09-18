@@ -1,0 +1,35 @@
+.itemDisplay {
+    background-color: var(--surface);
+    font-family: TerrariaFont, serif;
+    color: var(--on-surface);
+    width: 10vw;
+    aspect-ratio: 1 / 1;
+    border: var(--on-background) solid 3px;
+    border-radius: 10px;
+    cursor: pointer;
+
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+}
+
+.itemImageContainer {
+    padding-top: 2vh;
+    width: 5.5vw;
+    aspect-ratio: 1 / 1;
+    margin: 0 auto;
+    display: block;
+}
+
+.itemImage {
+    width: 100%;
+    image-rendering: pixelated;
+}
+
+.itemCaption {
+    font-family: TerrariaFont, serif;
+    color: var(--on-surface);
+    display: block;
+    font-size: 3.5vh;
+}

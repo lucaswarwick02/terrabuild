@@ -18,7 +18,11 @@
   font-family: TerrariaFont, serif;
   background-color: var(--background);
   height: 60vh;
+  width: 100%;
   font-size: 3vh;
+  margin: 0 auto;
+  display: block;
+  text-align:center;
 }
 
 select {
