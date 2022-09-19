@@ -27,6 +27,9 @@ function BuildSummary(props) {
             <p><span style={{textDecoration: "underline"}}>Total Armor:</span> {totalArmor}</p>
             {setBonus && <p><span style={{textDecoration: "underline"}}>Set Bonus:</span> {setBonus}</p>}
             {setEffect && <p><span style={{textDecoration: "underline"}}>Set Effect:</span> {setEffect}</p>}
+            <p>{queryHead(props.data.head).bonus}</p>
+            <p>{queryChest(props.data.chest).bonus}</p>
+            <p>{queryLegs(props.data.legs).bonus}</p>
         </div>
     );
 }
