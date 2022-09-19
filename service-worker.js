@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/terrabuild/precache-manifest.e78a16729b249c37fea5841f829c57e6.js"
+  "/terrabuild/precache-manifest.10e151d7333cb3e7c4625fa68a3ccb57.js"
 );
 
 workbox.clientsClaim();
