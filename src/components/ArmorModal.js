@@ -46,9 +46,11 @@ function ArmorModal(props) {
         <div id="armorModal">
             <div id="armorModalContent">
                 <h1>Armor Modal</h1>
-                {getItems().map(item => (
-                    <ArmorItem key={item.itemID} onClick={() => handleArmorChange(props.modalType, item.itemID)} item={item} />
-                ))}
+                <div className="selectionContainer">
+                    {getItems().map(item => (
+                        <ArmorItem key={item.itemID} onClick={() => handleArmorChange(props.modalType, item.itemID)} item={item} />
+                    ))}
+                </div>
             </div>
         </div>
     );
