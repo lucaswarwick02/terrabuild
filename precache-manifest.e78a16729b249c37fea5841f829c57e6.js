@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "751682e4a99e21384e6f",
-    "url": "/terrabuild/static/css/main.e33cd1a0.chunk.css"
+    "revision": "9f3bb0fbd89c229eea33",
+    "url": "/terrabuild/static/css/main.8b92b0cd.chunk.css"
   },
   {
-    "revision": "751682e4a99e21384e6f",
-    "url": "/terrabuild/static/js/main.751682e4.chunk.js"
+    "revision": "9f3bb0fbd89c229eea33",
+    "url": "/terrabuild/static/js/main.9f3bb0fb.chunk.js"
   },
   {
     "revision": "d11720e887a1448ed361",
@@ -24,7 +24,7 @@ self.__precacheManifest = [
     "url": "/terrabuild/static/media/ANDYB.775c3814.TTF"
   },
   {
-    "revision": "79c7e2591d6c59ce6c242766a0eed811",
+    "revision": "80fc528ef02be1ba270c134056757ca0",
     "url": "/terrabuild/index.html"
   }
 ];
