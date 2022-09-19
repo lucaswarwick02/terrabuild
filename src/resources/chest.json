@@ -54,5 +54,33 @@
     "rarity": 0,
     "defence": 2,
     "bonus": ""
+  },
+  {
+    "itemID": 1136,
+    "name": "Rain Coat",
+    "rarity": 0,
+    "defence": 2,
+    "bonus": ""
+  },
+  {
+    "itemID": 804,
+    "name": "Snow Coat",
+    "rarity": 0,
+    "defence": 2,
+    "bonus": ""
+  },
+  {
+    "itemID": 979,
+    "name": "Pink Snow Coat",
+    "rarity": 0,
+    "defence": 2,
+    "bonus": ""
+  },
+  {
+    "itemID": 2368,
+    "name": "Angler Vest",
+    "rarity": 1,
+    "defence": 2,
+    "bonus": "+5% fishing power"
   }
 ]

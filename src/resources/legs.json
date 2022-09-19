@@ -54,5 +54,26 @@
     "rarity": 0,
     "defence": 1,
     "bonus": ""
+  },
+  {
+    "itemID": 805,
+    "name": "Snow Pants",
+    "rarity": 0,
+    "defence": 1,
+    "bonus": ""
+  },
+  {
+    "itemID": 980,
+    "name": "Pink Snow Pants",
+    "rarity": 0,
+    "defence": 1,
+    "bonus": ""
+  },
+  {
+    "itemID": 2369,
+    "name": "Angler Pants",
+    "rarity": 1,
+    "defence": 1,
+    "bonus": "+5% fishing power"
   }
 ]

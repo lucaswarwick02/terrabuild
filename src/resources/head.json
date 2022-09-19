@@ -54,5 +54,33 @@
     "rarity": 0,
     "defence": 1,
     "bonus": ""
+  },
+  {
+    "itemID": 1135,
+    "name": "Rain Hat",
+    "rarity": 0,
+    "defence": 1,
+    "bonus": ""
+  },
+  {
+    "itemID": 803,
+    "name": "Snow Hood",
+    "rarity": 0,
+    "defence": 1,
+    "bonus": ""
+  },
+  {
+    "itemID": 978,
+    "name": "Pink Snow Hood",
+    "rarity": 0,
+    "defence": 1,
+    "bonus": ""
+  },
+  {
+    "itemID": 2367,
+    "name": "Angler Hat",
+    "rarity": 1,
+    "defence": 1,
+    "bonus": "+5% fishing power"
   }
 ]
