@@ -26,5 +26,33 @@
     "rarity": 0,
     "defence": 1,
     "bonus": ""
+  },
+  {
+    "itemID": 2510,
+    "name": "Boreal Wood Breastplate",
+    "rarity": 0,
+    "defence": 1,
+    "bonus": ""
+  },
+  {
+    "itemID": 2513,
+    "name": "Palm Wood Breastplate",
+    "rarity": 0,
+    "defence": 1,
+    "bonus": ""
+  },
+  {
+    "itemID": 731,
+    "name": "Ebonwood Breastplate",
+    "rarity": 0,
+    "defence": 2,
+    "bonus": ""
+  },
+  {
+    "itemID": 925,
+    "name": "Shadewood Breastplate",
+    "rarity": 0,
+    "defence": 2,
+    "bonus": ""
   }
 ]

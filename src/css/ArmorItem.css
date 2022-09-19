@@ -16,7 +16,7 @@
 
 .itemImageContainer {
     padding-top: 2vh;
-    width: 5.5vw;
+    width: 60%;
     aspect-ratio: 1 / 1;
     margin: 0 auto;
     display: block;
@@ -31,5 +31,5 @@
     font-family: TerrariaFont, serif;
     color: var(--on-surface);
     display: block;
-    font-size: 3.5vh;
+    max-font-size: 3vh;
 }

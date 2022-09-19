@@ -26,5 +26,33 @@
     "rarity": 0,
     "defence": 1,
     "bonus": ""
+  },
+  {
+    "itemID": 2509,
+    "name": "Boreal Wood Helmet",
+    "rarity": 0,
+    "defence": 1,
+    "bonus": ""
+  },
+  {
+    "itemID": 2512,
+    "name": "Palm Wood Helmet",
+    "rarity": 0,
+    "defence": 1,
+    "bonus": ""
+  },
+  {
+    "itemID": 730,
+    "name": "Ebonwood Helmet",
+    "rarity": 0,
+    "defence": 1,
+    "bonus": ""
+  },
+  {
+    "itemID": 924,
+    "name": "Shadewood Helmet",
+    "rarity": 0,
+    "defence": 1,
+    "bonus": ""
   }
 ]

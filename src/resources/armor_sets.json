@@ -13,5 +13,26 @@
     "set": [733, 734, 735],
     "bonus": "+1 defense",
     "effect": ""
+  },
+  {
+    "set": [2509, 2510, 2511],
+    "bonus": "+1 defence",
+    "effect": ""
+  },
+  {
+    "set": [2512, 2513, 2514],
+    "bonus": "+1 defence",
+    "effect": ""
+  },
+  {
+    "set": [730, 731, 732],
+    "bonus": "+1 defence",
+    "effect": ""
+  },
+  {
+    "set": [924, 925, 926],
+    "bonus": "+1 defence",
+    "effect": ""
   }
+
 ]
