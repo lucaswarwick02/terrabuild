@@ -14,6 +14,17 @@
     margin: 10px;
 }
 
+@media screen and (orientation: portrait) {
+    .itemDisplay {
+        width: 20vw;
+    }
+}
+@media screen and (orientation: landscape) {
+    .itemDisplay {
+        width: 10vw;
+    }
+}
+
 .itemImageContainer {
     padding-top: 2vh;
     width: 60%;
@@ -32,4 +43,5 @@
     color: var(--on-surface);
     display: block;
     max-font-size: 3vh;
+    word-wrap: break-word;
 }
