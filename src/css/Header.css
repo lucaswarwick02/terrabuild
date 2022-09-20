@@ -5,12 +5,14 @@
 
 #header {
     background-color: var(--surface);
-    height: 5vh;
+    height: 7vh;
     text-align: center;
     font-family: TerrariaFont, serif;
+    box-shadow: 0 0 0 2px var(--primary); /* emulate the border */
 }
 #header h1 {
+    padding-top: 1vh;
+    color: var(--primary);
     margin: 0;
     font-size: 5vh;
-    color: var(--on-surface)
 }

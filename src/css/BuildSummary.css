@@ -8,11 +8,13 @@
     height: 35vh;
     text-align: center;
     font-family: TerrariaFont, serif;
+    box-shadow: 0 0 0 2px var(--primary); /* emulate the border */
 }
 #buildSummary h3 {
+    padding-top: 1vh;
+    color: var(--primary);
     margin: 0;
     font-size: 5vh;
-    color: var(--on-surface)
 }
 #buildSummary p {
     margin: 0;

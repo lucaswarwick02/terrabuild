@@ -39,14 +39,23 @@ function App() {
             <div className="App">
                 <Header />
                 <div id="buildSelection">
-                    <ArmorItem onClick={armorModalClick("head")} item={queryHead(data.head)} />
-                    <ArmorItem onClick={armorModalClick("chest")} item={queryChest(data.chest)} />
-                    <ArmorItem onClick={armorModalClick("legs")} item={queryLegs(data.legs)} />
-                    <ArmorModal
-                        data={data}
-                        setData={setData}
-                        modalType={armorModalType}
-                    />
+                    <div>
+                        <ArmorItem onClick={armorModalClick("head")} item={queryHead(data.head)} />
+                        <ArmorItem onClick={armorModalClick("chest")} item={queryChest(data.chest)} />
+                        <ArmorItem onClick={armorModalClick("legs")} item={queryLegs(data.legs)} />
+                        <ArmorModal
+                            data={data}
+                            setData={setData}
+                            modalType={armorModalType}
+                        />
+                    </div><div>
+                        {/* TODO This will be used for adding accessories */}
+                        <ArmorItem onClick={() => {}} item={queryHead(0)} />
+                        <ArmorItem onClick={() => {}} item={queryHead(0)} />
+                        <ArmorItem onClick={() => {}} item={queryHead(0)} /><ArmorItem onClick={() => {}} item={queryHead(0)} />
+                        <ArmorItem onClick={() => {}} item={queryHead(0)} />
+                        {/* TODO AccessoryModal */}
+                    </div>
                 </div>
                 <BuildSummary data={data} />
             </div>

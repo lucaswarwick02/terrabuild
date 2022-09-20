@@ -2,12 +2,10 @@
     background-color: var(--surface);
     font-family: TerrariaFont, serif;
     color: var(--on-surface);
-    width: 10vw;
     aspect-ratio: 1 / 1;
     border: var(--on-background) solid 3px;
     border-radius: 10px;
     cursor: pointer;
-
     vertical-align: top;
     display: inline-block;
     text-align: center;
@@ -17,11 +15,23 @@
 @media screen and (orientation: portrait) {
     .itemDisplay {
         width: 20vw;
+        aspect-ratio: 1 / 1.75;
+    }
+
+    .itemCaption {
+        font-size: 2vh;
+        max-font-size: 2vh;
     }
 }
 @media screen and (orientation: landscape) {
     .itemDisplay {
         width: 10vw;
+        aspect-ratio: 1 / 1;
+    }
+
+    .itemCaption {
+        font-size: 3vh;
+        max-font-size: 3vh;
     }
 }
 
@@ -42,6 +52,7 @@
     font-family: TerrariaFont, serif;
     color: var(--on-surface);
     display: block;
-    max-font-size: 3vh;
+    text-overflow: ellipsis;
     word-wrap: break-word;
+    -webkit-text-size-adjust: auto;
 }
