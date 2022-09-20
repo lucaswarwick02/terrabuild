@@ -4,83 +4,122 @@
     "name": "None",
     "rarity": -1,
     "defence": 0,
-    "bonus": ""
+    "bonus": {}
   },
   {
     "itemID": 410,
     "name": "Mining Shirt",
     "rarity": 1,
     "defence": 1,
-    "bonus": ""
+    "bonus": {}
   },
   {
     "itemID": 728,
     "name": "Wood Breastplate",
     "rarity": 0,
     "defence": 1,
-    "bonus": ""
+    "bonus": {}
   },
   {
     "itemID": 734,
     "name": "Rich Mahogany Breastplate",
     "rarity": 0,
     "defence": 1,
-    "bonus": ""
+    "bonus": {}
   },
   {
     "itemID": 2510,
     "name": "Boreal Wood Breastplate",
     "rarity": 0,
     "defence": 1,
-    "bonus": ""
+    "bonus": {}
   },
   {
     "itemID": 2513,
     "name": "Palm Wood Breastplate",
     "rarity": 0,
     "defence": 1,
-    "bonus": ""
+    "bonus": {}
   },
   {
     "itemID": 731,
     "name": "Ebonwood Breastplate",
     "rarity": 0,
     "defence": 2,
-    "bonus": ""
+    "bonus": {}
   },
   {
     "itemID": 925,
     "name": "Shadewood Breastplate",
     "rarity": 0,
     "defence": 2,
-    "bonus": ""
+    "bonus": {}
   },
   {
     "itemID": 1136,
     "name": "Rain Coat",
     "rarity": 0,
     "defence": 2,
-    "bonus": ""
+    "bonus": {}
   },
   {
     "itemID": 804,
     "name": "Snow Coat",
     "rarity": 0,
     "defence": 2,
-    "bonus": ""
+    "bonus": {}
   },
   {
     "itemID": 979,
     "name": "Pink Snow Coat",
     "rarity": 0,
     "defence": 2,
-    "bonus": ""
+    "bonus": {}
   },
   {
     "itemID": 2368,
     "name": "Angler Vest",
     "rarity": 1,
     "defence": 2,
-    "bonus": "+5% fishing power"
+    "bonus": {
+      "fishingPower": 5
+    }
+  },
+  {
+    "itemID": 895,
+    "name": "Cactus Breastplate",
+    "rarity": 0,
+    "defence": 1,
+    "bonus": {}
+  },
+  {
+    "itemID": 80,
+    "name": "Copper Chainmail",
+    "rarity": 0,
+    "defence": 2,
+    "bonus": {}
+  },
+  {
+    "itemID": 688,
+    "name": "Tin Chainmail",
+    "rarity": 0,
+    "defence": 2,
+    "bonus": {}
+  },
+  {
+    "itemID": 1732,
+    "name": "Pumpkin Breastplate",
+    "rarity": 0,
+    "defence": 3,
+    "bonus": {}
+  },
+  {
+    "itemID": 257,
+    "name": "Ninja Shirt",
+    "rarity": 1,
+    "defence": 4,
+    "bonus" : {
+      "criticalStrikeChance": 3
+    }
   }
 ]

@@ -4,83 +4,122 @@
     "name": "None",
     "rarity": -1,
     "defence": 0,
-    "bonus": ""
+    "bonus": {}
   },
   {
     "itemID": 88,
     "name": "Mining Helmet",
     "rarity": 1,
     "defence": 1,
-    "bonus": "Helmet piece emits light."
+    "bonus": {}
   },
   {
     "itemID": 727,
     "name": "Wood Helmet",
     "rarity": 0,
     "defence": 1,
-    "bonus": ""
+    "bonus": {}
   },
   {
     "itemID": 733,
     "name": "Rich Mahogany Helmet",
     "rarity": 0,
     "defence": 1,
-    "bonus": ""
+    "bonus": {}
   },
   {
     "itemID": 2509,
     "name": "Boreal Wood Helmet",
     "rarity": 0,
     "defence": 1,
-    "bonus": ""
+    "bonus": {}
   },
   {
     "itemID": 2512,
     "name": "Palm Wood Helmet",
     "rarity": 0,
     "defence": 1,
-    "bonus": ""
+    "bonus": {}
   },
   {
     "itemID": 730,
     "name": "Ebonwood Helmet",
     "rarity": 0,
     "defence": 1,
-    "bonus": ""
+    "bonus": {}
   },
   {
     "itemID": 924,
     "name": "Shadewood Helmet",
     "rarity": 0,
     "defence": 1,
-    "bonus": ""
+    "bonus": {}
   },
   {
     "itemID": 1135,
     "name": "Rain Hat",
     "rarity": 0,
     "defence": 1,
-    "bonus": ""
+    "bonus": {}
   },
   {
     "itemID": 803,
     "name": "Snow Hood",
     "rarity": 0,
     "defence": 1,
-    "bonus": ""
+    "bonus": {}
   },
   {
     "itemID": 978,
     "name": "Pink Snow Hood",
     "rarity": 0,
     "defence": 1,
-    "bonus": ""
+    "bonus": {}
   },
   {
     "itemID": 2367,
     "name": "Angler Hat",
     "rarity": 1,
     "defence": 1,
-    "bonus": "+5% fishing power"
+    "bonus": {
+      "fishingPower": 5
+    }
+  },
+  {
+    "itemID": 894,
+    "name": "Cactus Armor",
+    "rarity": 0,
+    "defence": 1,
+    "bonus": {}
+  },
+  {
+    "itemID": 89,
+    "name": "Copper Helmet",
+    "rarity": 0,
+    "defence": 1,
+    "bonus": {}
+  },
+  {
+    "itemID": 687,
+    "name": "Tin Helmet",
+    "rarity": 0,
+    "defence": 2,
+    "bonus": {}
+  },
+  {
+    "itemID": 1731,
+    "name": "Pumpkin Helmet",
+    "rarity": 0,
+    "defence": 2,
+    "bonus": {}
+  },
+  {
+    "itemID": 256,
+    "name": "Ninja Hood",
+    "rarity": 1,
+    "defence": 2,
+    "bonus" : {
+      "criticalStrikeChance": 3
+    }
   }
 ]

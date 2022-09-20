@@ -72,3 +72,59 @@ export const sortByName = (item1, item2) => {
 export const originalSort = (item1, item2) => {
     return -1;
 }
+
+export const bonusToString = (name, value) => {
+    switch (name) {
+        case "defence":
+            return "+" + value + " defence";
+        case "miningSpeed":
+            return "+" + value + "% mining speed";
+        case "damageIncrease":
+            return "+" + value + "% damage";
+        case "movementSpeed":
+            return "+" + value + "% movement speed";
+        case "criticalStrikeChance":
+            return "+" + value + "% critical strike chance";
+        case "fishingPower":
+            return "+" + value + "% fishing power";
+        case "thornsDamage":
+            return value + " thorns damage";
+        default:
+            return "INVALID NAME";
+    }
+}
+
+export const complexBonusToString = complexBonus => {
+    let bonusText = "";
+    Object.keys(complexBonus).forEach((value, index) => {
+        bonusText += bonusToString(value, complexBonus[value]);
+    });
+
+    return bonusText;
+}
+
+/**
+ *
+ * @param {Object[]} complexBonusList
+ */
+export const combineComplexBonuses = complexBonusList => {
+    // Copy the list, then we can iterate through
+    const copiedComplexBonusList = complexBonusList.map(obj => {
+        return Object.assign({}, obj);
+    });
+
+    return copiedComplexBonusList.reduce((total, bonus) => {
+        // Iterate through bonus and add to the running total
+        Object.keys(bonus).forEach(key => {
+            if (key in total) {
+                // Add values
+                total[key] += bonus[key];
+            }
+            else {
+                // Add as new
+                total[key] = bonus[key];
+            }
+        });
+        return total;
+    });
+}
