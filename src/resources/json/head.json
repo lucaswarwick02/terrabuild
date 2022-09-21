@@ -4,77 +4,88 @@
     "name": "None",
     "rarity": -1,
     "defence": 0,
-    "bonus": {}
+    "bonus": {},
+    "effect": ""
   },
   {
     "itemID": 88,
     "name": "Mining Helmet",
     "rarity": 1,
     "defence": 1,
-    "bonus": {}
+    "bonus": {},
+    "effect": ""
   },
   {
     "itemID": 727,
     "name": "Wood Helmet",
     "rarity": 0,
     "defence": 1,
-    "bonus": {}
+    "bonus": {},
+    "effect": ""
   },
   {
     "itemID": 733,
     "name": "Rich Mahogany Helmet",
     "rarity": 0,
     "defence": 1,
-    "bonus": {}
+    "bonus": {},
+    "effect": ""
   },
   {
     "itemID": 2509,
     "name": "Boreal Wood Helmet",
     "rarity": 0,
     "defence": 1,
-    "bonus": {}
+    "bonus": {},
+    "effect": ""
   },
   {
     "itemID": 2512,
     "name": "Palm Wood Helmet",
     "rarity": 0,
     "defence": 1,
-    "bonus": {}
+    "bonus": {},
+    "effect": ""
   },
   {
     "itemID": 730,
     "name": "Ebonwood Helmet",
     "rarity": 0,
     "defence": 1,
-    "bonus": {}
+    "bonus": {},
+    "effect": ""
   },
   {
     "itemID": 924,
     "name": "Shadewood Helmet",
     "rarity": 0,
     "defence": 1,
-    "bonus": {}
+    "bonus": {},
+    "effect": ""
   },
   {
     "itemID": 1135,
     "name": "Rain Hat",
     "rarity": 0,
     "defence": 1,
-    "bonus": {}
+    "bonus": {},
+    "effect": ""
   },
   {
     "itemID": 803,
     "name": "Snow Hood",
     "rarity": 0,
     "defence": 1,
-    "bonus": {}
+    "bonus": {},
+    "effect": ""
   },
   {
     "itemID": 978,
     "name": "Pink Snow Hood",
     "rarity": 0,
     "defence": 1,
-    "bonus": {}
+    "bonus": {},
+    "effect": ""
   },
   {
     "itemID": 2367,
@@ -83,28 +94,32 @@
     "defence": 1,
     "bonus": {
       "fishingPower": 5
-    }
+    },
+    "effect": ""
   },
   {
     "itemID": 894,
     "name": "Cactus Armor",
     "rarity": 0,
     "defence": 1,
-    "bonus": {}
+    "bonus": {},
+    "effect": ""
   },
   {
     "itemID": 89,
     "name": "Copper Helmet",
     "rarity": 0,
     "defence": 1,
-    "bonus": {}
+    "bonus": {},
+    "effect": ""
   },
   {
     "itemID": 687,
     "name": "Tin Helmet",
     "rarity": 0,
     "defence": 2,
-    "bonus": {}
+    "bonus": {},
+    "effect": ""
   },
   {
     "itemID": 1731,

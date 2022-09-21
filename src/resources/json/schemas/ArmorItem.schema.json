@@ -1,0 +1,70 @@
+{
+  "type": "array",
+  "items": {
+    "description": "Array of armor pieces",
+    "type": "object",
+    "properties": {
+      "itemID": {
+        "description": "Unique identifier to represent the item",
+        "type": "integer",
+        "minimum": 0
+      },
+      "name": {
+        "description": "What the item is called in-game",
+        "type": "string"
+      },
+      "rarity": {
+        "description": "Internal ID for the item's rarity. See HelperFunctions.js",
+        "type": "integer",
+        "minimum": -1,
+        "maximum": 10
+      },
+      "defence": {
+        "description": "Number of defence points the item gives",
+        "type": "integer",
+        "minimum": 0
+      },
+      "bonus": {
+        "description": "Object containing attribute to value pairs",
+        "type": "object",
+        "properties": {
+          "defence": {
+            "description": "Additional defenc the armor piece gives",
+            "type": "integer"
+          },
+          "miningSpeed": {
+            "description": "Percentage bonus towards mining speed",
+            "type": "integer"
+          },
+          "damageIncrease": {
+            "description": "Percentage bonus towards damage",
+            "type": "integer"
+          },
+          "movementSpeed": {
+            "description": "Percentage bonus towards movement speed",
+            "type": "integer"
+          },
+          "fishingPower": {
+            "description": "Percentage bonus towards fishing power",
+            "type": "integer"
+          },
+          "criticalStrikeChance": {
+            "description": "Percentage bonus towards critical strike chance",
+            "type": "integer"
+          },
+          "thornsDamage": {
+            "description": "Raw damage from incoming attacks",
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "effect": {
+        "description": "Vanity effect the item gives, not stat bonuses",
+        "type": "string"
+      }
+    },
+    "required": ["itemID", "name", "rarity", "defence", "bonus", "effect"],
+    "additionalProperties": false
+  }
+}

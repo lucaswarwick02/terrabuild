@@ -4,77 +4,88 @@
     "name": "None",
     "rarity": -1,
     "defence": 0,
-    "bonus": {}
+    "bonus": {},
+    "effect": ""
   },
   {
     "itemID": 410,
     "name": "Mining Shirt",
     "rarity": 1,
     "defence": 1,
-    "bonus": {}
+    "bonus": {},
+    "effect": ""
   },
   {
     "itemID": 728,
     "name": "Wood Breastplate",
     "rarity": 0,
     "defence": 1,
-    "bonus": {}
+    "bonus": {},
+    "effect": ""
   },
   {
     "itemID": 734,
     "name": "Rich Mahogany Breastplate",
     "rarity": 0,
     "defence": 1,
-    "bonus": {}
+    "bonus": {},
+    "effect": ""
   },
   {
     "itemID": 2510,
     "name": "Boreal Wood Breastplate",
     "rarity": 0,
     "defence": 1,
-    "bonus": {}
+    "bonus": {},
+    "effect": ""
   },
   {
     "itemID": 2513,
     "name": "Palm Wood Breastplate",
     "rarity": 0,
     "defence": 1,
-    "bonus": {}
+    "bonus": {},
+    "effect": ""
   },
   {
     "itemID": 731,
     "name": "Ebonwood Breastplate",
     "rarity": 0,
     "defence": 2,
-    "bonus": {}
+    "bonus": {},
+    "effect": ""
   },
   {
     "itemID": 925,
     "name": "Shadewood Breastplate",
     "rarity": 0,
     "defence": 2,
-    "bonus": {}
+    "bonus": {},
+    "effect": ""
   },
   {
     "itemID": 1136,
     "name": "Rain Coat",
     "rarity": 0,
     "defence": 2,
-    "bonus": {}
+    "bonus": {},
+    "effect": ""
   },
   {
     "itemID": 804,
     "name": "Snow Coat",
     "rarity": 0,
     "defence": 2,
-    "bonus": {}
+    "bonus": {},
+    "effect": ""
   },
   {
     "itemID": 979,
     "name": "Pink Snow Coat",
     "rarity": 0,
     "defence": 2,
-    "bonus": {}
+    "bonus": {},
+    "effect": ""
   },
   {
     "itemID": 2368,
@@ -125,6 +136,7 @@
     "defence": 4,
     "bonus" : {
       "criticalStrikeChance": 3
-    }
+    },
+    "effect": ""
   }
 ]

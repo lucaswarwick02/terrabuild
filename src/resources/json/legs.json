@@ -4,70 +4,80 @@
     "name": "None",
     "rarity": -1,
     "defence": 0,
-    "bonus": {}
+    "bonus": {},
+    "effect": ""
   },
   {
     "itemID": 411,
     "name": "Mining Pants",
     "rarity": 1,
     "defence": 1,
-    "bonus": {}
+    "bonus": {},
+    "effect": ""
   },
   {
     "itemID": 729,
     "name": "Wood Greaves",
     "rarity": 0,
     "defence": 0,
-    "bonus": {}
+    "bonus": {},
+    "effect": ""
   },
   {
     "itemID": 735,
     "name": "Rich Mahogany Greaves",
     "rarity": 0,
     "defence": 1,
-    "bonus": {}
+    "bonus": {},
+    "effect": ""
   },
   {
     "itemID": 2511,
     "name": "Boreal Wood Greaves",
     "rarity": 0,
     "defence": 1,
-    "bonus": {}
+    "bonus": {},
+    "effect": ""
   },
   {
     "itemID": 2514,
     "name": "Palm Wood Greaves",
     "rarity": 0,
     "defence": 1,
-    "bonus": {}
+    "bonus": {},
+    "effect": ""
   },
   {
     "itemID": 732,
     "name": "Ebonwood Greaves",
     "rarity": 0,
     "defence": 1,
-    "bonus": {}
+    "bonus": {},
+    "effect": ""
   },
   {
     "itemID": 926,
     "name": "Shadewood Greaves",
     "rarity": 0,
     "defence": 1,
-    "bonus": {}
+    "bonus": {},
+    "effect": ""
   },
   {
     "itemID": 805,
     "name": "Snow Pants",
     "rarity": 0,
     "defence": 1,
-    "bonus": {}
+    "bonus": {},
+    "effect": ""
   },
   {
     "itemID": 980,
     "name": "Pink Snow Pants",
     "rarity": 0,
     "defence": 1,
-    "bonus": {}
+    "bonus": {},
+    "effect": ""
   },
   {
     "itemID": 2369,
@@ -76,35 +86,40 @@
     "defence": 1,
     "bonus": {
       "fishingPower": 5
-    }
+    },
+    "effect": ""
   },
   {
     "itemID": 896,
     "name": "Cactus Leggings",
     "rarity": 0,
     "defence": 1,
-    "bonus": {}
+    "bonus": {},
+    "effect": ""
   },
   {
     "itemID": 76,
     "name": "Copper Greaves",
     "rarity": 0,
     "defence": 1,
-    "bonus": {}
+    "bonus": {},
+    "effect": ""
   },
   {
     "itemID": 689,
     "name": "Tin Greaves",
     "rarity": 0,
     "defence": 1,
-    "bonus": {}
+    "bonus": {},
+    "effect": ""
   },
   {
     "itemID": 1733,
     "name": "Pumpkin Leggings",
     "rarity": 0,
     "defence": 2,
-    "bonus": {}
+    "bonus": {},
+    "effect": ""
   },
   {
     "itemID": 258,
@@ -113,6 +128,7 @@
     "defence": 3,
     "bonus" : {
       "criticalStrikeChance": 3
-    }
+    },
+    "effect": ""
   }
 ]
