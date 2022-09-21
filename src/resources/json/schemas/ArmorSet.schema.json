@@ -1,0 +1,32 @@
+{
+  "type": "array",
+  "items": {
+    "description": "Information for when a complete set is selected",
+    "type": "object",
+    "properties": {
+      "_comment": {
+        "description": "Comment to describe which armor set it is",
+        "type": "string"
+      },
+      "set": {
+        "description": "List of required itemIDs for the set to be a match",
+        "type": "array",
+        "items": {
+          "description": "ItemID of the armor pieces",
+          "type": "integer"
+        },
+        "minItems": 2,
+        "maxItems": 3
+      },
+      "bonus": {
+        "$ref": "item/Bonus.schema.json"
+      },
+      "effect": {
+        "description": "Vanity effect the item gives, not stat bonuses",
+        "type": "string"
+      }
+    },
+    "required": ["set"],
+    "additionalProperties": false
+  }
+}

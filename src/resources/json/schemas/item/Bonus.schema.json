@@ -1,0 +1,35 @@
+{
+  "description": "Object containing attribute to value pairs",
+  "type": "object",
+  "properties": {
+    "defence": {
+      "description": "Additional defence the armor piece gives",
+      "type": "integer"
+    },
+    "miningSpeed": {
+      "description": "Percentage bonus towards mining speed",
+      "type": "integer"
+    },
+    "damageIncrease": {
+      "description": "Percentage bonus towards damage",
+      "type": "integer"
+    },
+    "movementSpeed": {
+      "description": "Percentage bonus towards movement speed",
+      "type": "integer"
+    },
+    "fishingPower": {
+      "description": "Percentage bonus towards fishing power",
+      "type": "integer"
+    },
+    "criticalStrikeChance": {
+      "description": "Percentage bonus towards critical strike chance",
+      "type": "integer"
+    },
+    "thornsDamage": {
+      "description": "Raw damage from incoming attacks",
+      "type": "integer"
+    }
+  },
+  "additionalProperties": false
+}
