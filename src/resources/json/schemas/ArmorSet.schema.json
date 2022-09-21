@@ -18,13 +18,8 @@
         "minItems": 2,
         "maxItems": 3
       },
-      "bonus": {
-        "$ref": "item/Bonus.schema.json"
-      },
-      "effect": {
-        "description": "Vanity effect the item gives, not stat bonuses",
-        "type": "string"
-      }
+      "bonus": { "$ref": "item/Bonus.schema.json" },
+      "effect": { "$ref": "item/Effect.schema.json" }
     },
     "required": ["set"],
     "additionalProperties": false

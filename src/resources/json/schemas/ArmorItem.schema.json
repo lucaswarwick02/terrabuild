@@ -4,38 +4,16 @@
     "description": "Array of armor pieces",
     "type": "object",
     "properties": {
-      "itemID": {
-        "description": "Unique identifier to represent the item",
-        "type": "integer",
-        "minimum": 0
-      },
-      "name": {
-        "description": "What the item is called in-game",
-        "type": "string"
-      },
-      "rarity": {
-        "description": "Internal ID for the item's rarity. See HelperFunctions.js",
-        "type": "integer",
-        "minimum": -1,
-        "maximum": 10
-      },
-      "progression": {
-        "description": "Represents the stage in progression the item can be found in. See HelperFunctions.js",
-        "type": "integer",
-        "minimum": 0,
-        "maximum": 2
-      },
+      "itemID": { "$ref": "item/ID.schema.json" },
+      "name": { "$ref": "item/Name.schema.json" },
+      "rarity": { "$ref": "item/Rarity.schema.json" },
+      "progression": { "$ref": "item/Progression.schema.json" },
+      "bonus": { "$ref": "item/Bonus.schema.json" },
+      "effect": { "$ref": "item/Effect.schema.json" },
       "defence": {
         "description": "Number of defence points the item gives",
         "type": "integer",
         "minimum": 0
-      },
-      "bonus": {
-        "$ref": "item/Bonus.schema.json"
-      },
-      "effect": {
-        "description": "Vanity effect the item gives, not stat bonuses",
-        "type": "string"
       }
     },
     "required": ["itemID", "name", "rarity", "progression", "defence", "bonus", "effect"],

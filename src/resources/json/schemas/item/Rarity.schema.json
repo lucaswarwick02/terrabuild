@@ -1,0 +1,6 @@
+{
+  "description": "Internal ID for the item's rarity. See HelperFunctions.js",
+  "type": "integer",
+  "minimum": -1,
+  "maximum": 10
+}

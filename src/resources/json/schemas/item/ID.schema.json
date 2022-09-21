@@ -1,0 +1,5 @@
+{
+  "description": "Unique identifier to represent the item",
+  "type": "integer",
+  "minimum": 0
+}

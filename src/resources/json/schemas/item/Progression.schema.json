@@ -1,0 +1,6 @@
+{
+  "description": "Represents the stage in progression the item can be found in. See HelperFunctions.js",
+  "type": "integer",
+  "minimum": 0,
+  "maximum": 2
+},

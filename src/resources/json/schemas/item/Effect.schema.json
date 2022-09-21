@@ -1,0 +1,4 @@
+{
+  "description": "Vanity effect the item gives, not stat bonuses",
+  "type": "string"
+}
