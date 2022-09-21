@@ -1,7 +1,7 @@
-import headJsonData from '../resources/head.json';
-import chestJsonData from '../resources/chest.json';
-import legsJsonData from '../resources/legs.json';
-import armorSetsJsonData from '../resources/armor_sets.json'
+import headJsonData from '../resources/json/head.json';
+import chestJsonData from '../resources/json/chest.json';
+import legsJsonData from '../resources/json/legs.json';
+import armorSetsJsonData from '../resources/json/armor_sets.json'
 
 /**
  * ArmorItem config

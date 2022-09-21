@@ -83,35 +83,40 @@
     "defence": 2,
     "bonus": {
       "fishingPower": 5
-    }
+    },
+    "effect": ""
   },
   {
     "itemID": 895,
     "name": "Cactus Breastplate",
     "rarity": 0,
     "defence": 1,
-    "bonus": {}
+    "bonus": {},
+    "effect": ""
   },
   {
     "itemID": 80,
     "name": "Copper Chainmail",
     "rarity": 0,
     "defence": 2,
-    "bonus": {}
+    "bonus": {},
+    "effect": ""
   },
   {
     "itemID": 688,
     "name": "Tin Chainmail",
     "rarity": 0,
     "defence": 2,
-    "bonus": {}
+    "bonus": {},
+    "effect": ""
   },
   {
     "itemID": 1732,
     "name": "Pumpkin Breastplate",
     "rarity": 0,
     "defence": 3,
-    "bonus": {}
+    "bonus": {},
+    "effect": ""
   },
   {
     "itemID": 257,
