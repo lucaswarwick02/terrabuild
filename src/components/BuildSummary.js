@@ -1,7 +1,7 @@
 import '../css/BuildSummary.css';
-import React, { useEffect } from 'react';
+import React from 'react';
 import { queryHead, queryChest, queryLegs, querySetBonus, querySetEffect } from './JsonManager'
-import { bonusToString, complexBonusToString, combineComplexBonuses } from '../HelperFunctions'
+import { complexBonusToString, combineComplexBonuses } from '../HelperFunctions'
 
 function BuildSummary(props) {
 
@@ -26,13 +26,20 @@ function BuildSummary(props) {
     const chestBonus = queryChest(props.data.chest).bonus;
     const legsBonus = queryLegs(props.data.legs).bonus;
 
+    const combinedBonuses = combineComplexBonuses([headBonus, chestBonus, legsBonus, setBonus])
+
     return (
         <div id="buildSummary">
             <h3>Build Summary</h3>
-            <p><span style={{textDecoration: "underline"}}>Total Armor:</span> {totalArmor}</p>
-            {setBonus && <p><span style={{textDecoration: "underline"}}>Set Bonus:</span> {JSON.stringify(setBonus)}</p>}
-            {setEffect && <p><span style={{textDecoration: "underline"}}>Set Effect:</span> {setEffect}</p>}
-            <p>{complexBonusToString(combineComplexBonuses([headBonus, chestBonus, legsBonus]))}</p>
+
+            <p><span style={{textDecoration: "underline"}}>Total Armor:</span></p>
+            <p>{totalArmor}</p>
+
+            {combinedBonuses && <p><span style={{textDecoration: "underline"}}>Bonuses:</span></p>}
+            {combinedBonuses && <p>{complexBonusToString(combinedBonuses)}</p>}
+
+            {setEffect && <p><span style={{textDecoration: "underline"}}>Effects:</span></p>}
+            {setEffect && <p>{setEffect}</p>}
         </div>
     );
 }
