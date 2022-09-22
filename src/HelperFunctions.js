@@ -89,6 +89,44 @@ export const bonusToString = (name, value) => {
             return "+" + value + "% fishing power";
         case "thornsDamage":
             return value + " thorns damage";
+        case "rangedCriticalStrikeChance":
+            return "+" + value + "% ranged critical strike chance";
+        case "rangedDamage":
+            return "+" + value + "% ranged damage";
+        case "chanceNotToConsumeAmmo":
+            return "+" + value + "% chance to not consume ammo";
+        case "minionCapacity":
+            return "+" + value + " minion capacity";
+        case "minionDamage":
+            return "+" + value + "% minion damage";
+        case "whipRange":
+            return "+" + value + "% whip range";
+        case "whipSpeed":
+            return "+" + value + "% whip speed";
+        case "knockbackImmunity":
+            return "Grants immunity to knockback";
+        case "magicDamage":
+            return "+" + value + "% magic damage";
+        case "freeSpaceGun":
+            return "Space Gun costs 0 mana";
+        case "manaCapacity":
+            return "+" + value + " mana capacity";
+        case "magicCriticalStrikeChance":
+            return "+" + value + "% magic critical strike chance";
+        case "manaUsage":
+            return value + "mana usage";
+        case "meleeSpeed":
+            return "+" + value + "% melee speed";
+        case "damage":
+            return "+" + value + "% damage";
+        case "crimsonHealthRegen":
+            return "Greatly increased life regeneration";
+        case "meleeCriticalStrikeChance":
+            return "+" + value + "% melee critical strike chance";
+        case "meleeDamage":
+            return "+" + value + "% melee damage"
+        case "fireImmunity":
+            return "Cannot be set on fire";
         default:
             return "INVALID NAME";
     }

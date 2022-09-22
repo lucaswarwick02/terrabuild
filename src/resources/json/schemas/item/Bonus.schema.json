@@ -29,6 +29,82 @@
     "thornsDamage": {
       "description": "Raw damage from incoming attacks",
       "type": "integer"
+    },
+    "rangedCriticalStrikeChance": {
+      "description": "Percentage bonus towards ranged critical strike chance",
+      "type": "integer"
+    },
+    "rangedDamage": {
+      "description": "Percentage bonus towards ranged damage",
+      "type": "integer"
+    },
+    "chanceNotToConsumeAmmo": {
+      "description": "Percentage bonus towards not consuming ammo",
+      "type": "integer"
+    },
+    "minionCapacity": {
+      "description": "Additional minion capacity",
+      "type": "integer"
+    },
+    "minionDamage": {
+      "description": "Percentage bonus towards minion damage",
+      "type": "integer"
+    },
+    "whipRange": {
+      "description": "Percentage bonus towards whip range",
+      "type": "integer"
+    },
+    "whipSpeed": {
+      "description": "Percentage bonus towards whip speed",
+      "type": "integer"
+    },
+    "knockbackImmunity": {
+      "description": "Immunity towards knockback",
+      "type": "boolean"
+    },
+    "magicDamage": {
+      "description": "Percentage bonus towards magic damage",
+      "type": "integer"
+    },
+    "freeSpaceGun": {
+      "description": "If the space gun uses 0 mana",
+      "type": "boolean"
+    },
+    "manaCapacity": {
+      "description": "Bonus towards mana capacity",
+      "type": "integer"
+    },
+    "magicCriticalStrikeChance": {
+      "description": "Percentage bonus towards magic critical strike chance",
+      "type": "integer"
+    },
+    "manaUsage": {
+      "description": "Percentage bonus towards mana usage",
+      "type": "integer"
+    },
+    "meleeSpeed": {
+      "description": "Percentage bonus towards melee speed",
+      "type": "integer"
+    },
+    "damage": {
+      "description": "Percentage bonus towards damage",
+      "type": "integer"
+    },
+    "crimsonHealthRegen": {
+      "description": "Health regen provided by Crimson Armor",
+      "type": "boolean"
+    },
+    "meleeCriticalStrikeChance": {
+      "description": "Percentage bonus towards melee critical strike chance",
+      "type": "integer"
+    },
+    "meleeDamage": {
+      "description": "Percentage bonus towards melee damage",
+      "type": "integer"
+    },
+    "fireImmunity": {
+      "description": "Immunity towards fire",
+      "type": "boolean"
     }
   },
   "additionalProperties": false
