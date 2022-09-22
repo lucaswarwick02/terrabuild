@@ -36,6 +36,15 @@
     overflow-y: auto;
 }
 
+#armorModalHeading {
+    margin-top: 10px;
+}
+
+#filterByText {
+    width: 30vw;
+    height: 3vh;
+}
+
 /* Firefox */
 * {
     scrollbar-width: thin;
