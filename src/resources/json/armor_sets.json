@@ -150,5 +150,81 @@
       "chanceNotToConsumeAmmo": 20
     },
     "effect": ""
+  },
+  {
+    "name": "Bee Armor",
+    "set": [2361, 2362, 2363],
+    "bonus": {
+      "minionDamage": 10
+    },
+    "effect": ""
+  },
+  {
+    "name": "Obsidian Armor",
+    "set": [3266, 3267, 3268],
+    "bonus": {
+      "whipRange": 50,
+      "whipSpeed": 35,
+      "minionDamage": 15
+    },
+    "effect": ""
+  },
+  {
+    "name": "Gladiator Armor",
+    "set": [3187, 3188, 3189],
+    "bonus": {
+      "knockbackImmunity": true
+    },
+    "effect": ""
+  },
+  {
+    "name": "Meteor Armor",
+    "set": [123, 124, 125],
+    "bonus": {
+      "freeSpaceGun": true
+    },
+    "effect": "Flame particles when moving"
+  },
+  {
+    "name": "Jungle Armor",
+    "set": [228, 229, 230],
+    "bonus": {
+      "manaUsage": -16
+    },
+    "effect": "Grass particles when moving"
+  },
+  {
+    "name": "Necro Armor",
+    "set": [151, 152, 153],
+    "bonus": {
+      "rangedCriticalStrikeChance": 10,
+      "chanceNotToConsumeAmmo": 20
+    },
+    "effect": "After-image when moving, bone crunch sound when hurt"
+  },
+  {
+    "name": "Shadow Armor",
+    "set": [102, 101, 100],
+    "bonus": {
+      "movementSpeed": 15
+    },
+    "effect": "After-image when moving"
+  },
+  {
+    "name": "Crimson Armor",
+    "set": [792, 793, 794],
+    "bonus": {
+      "crimsonHealthRegen": true
+    },
+    "effect": "Emits red particles when moving and regenerating health"
+  },
+  {
+    "name": "Molten Armor",
+    "set": [231, 232, 233],
+    "bonus": {
+      "meleeDamage": 10,
+      "fireImmunity": true
+    },
+    "effect": "Flame particles when moving"
   }
 ]

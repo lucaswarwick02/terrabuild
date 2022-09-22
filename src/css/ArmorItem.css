@@ -35,6 +35,18 @@
     }
 }
 
+@media only screen and (orientation: landscape) and (max-width: 1000px) {
+    .itemDisplay {
+        width: 15vw;
+        aspect-ratio: 1 / 1.25;
+    }
+
+    .itemCaption {
+        font-size: 2.5vh;
+        max-font-size: 2.5vh;
+    }
+}
+
 .itemImageContainer {
     padding-top: 2vh;
     width: 60%;

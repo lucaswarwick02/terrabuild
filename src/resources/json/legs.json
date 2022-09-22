@@ -211,5 +211,103 @@
       "rangedCriticalStrikeChance": 4
     },
     "effect": ""
+  },
+  {
+    "itemID": 2363,
+    "name": "Bee Greaves",
+    "rarity": 3,
+    "progression": 0,
+    "defence": 4,
+    "bonus" : {
+      "minionDamage": 5
+    },
+    "effect": ""
+  },
+  {
+    "itemID": 3268,
+    "name": "Obsidian Pants",
+    "rarity": 1,
+    "progression": 0,
+    "defence": 5,
+    "bonus" : {
+      "minionDamage": 8
+    },
+    "effect": ""
+  },
+  {
+    "itemID": 3189,
+    "name": "Gladiator Leggings",
+    "rarity": 0,
+    "progression": 0,
+    "defence": 5,
+    "bonus" : {},
+    "effect": ""
+  },
+  {
+    "itemID": 125,
+    "name": "Meteor Leggings",
+    "rarity": 1,
+    "progression": 0,
+    "defence": 5,
+    "bonus" : {
+      "magicDamage": 9
+    },
+    "effect": ""
+  },
+  {
+    "itemID": 230,
+    "name": "Jungle Pants",
+    "rarity": 3,
+    "progression": 0,
+    "defence": 6,
+    "bonus" : {
+      "manaCapacity": 20,
+      "magicCriticalStrikeChance": 6
+    },
+    "effect": ""
+  },
+  {
+    "itemID": 153,
+    "name": "Necro Greaves",
+    "rarity": 2,
+    "progression": 0,
+    "defence": 6,
+    "bonus" : {
+      "rangedDamage": 5
+    },
+    "effect": ""
+  },
+  {
+    "itemID": 100,
+    "name": "Shadow Greaves",
+    "rarity": 1,
+    "progression": 0,
+    "defence": 6,
+    "bonus" : {
+      "meleeSpeed": 7
+    },
+    "effect": ""
+  },
+  {
+    "itemID": 794,
+    "name": "Crimson Greaves",
+    "rarity": 1,
+    "progression": 0,
+    "defence": 6,
+    "bonus" : {
+      "damage": 2
+    },
+    "effect": ""
+  },
+  {
+    "itemID": 233,
+    "name": "Molten Greaves",
+    "rarity": 3,
+    "progression": 0,
+    "defence": 8,
+    "bonus" : {
+      "meleeSpeed": 7
+    },
+    "effect": ""
   }
 ]

@@ -220,5 +220,104 @@
       "rangedCriticalStrikeChance": 4
     },
     "effect": ""
+  },
+  {
+    "itemID": 2361,
+    "name": "Bee Headgear",
+    "rarity": 3,
+    "progression": 0,
+    "defence": 4,
+    "bonus" : {
+      "minionDamage": 4,
+      "minionCapacity": 1
+    },
+    "effect": ""
+  },
+  {
+    "itemID": 3266,
+    "name": "Obsidian Outlaw Hat",
+    "rarity": 1,
+    "progression": 0,
+    "defence": 4,
+    "bonus" : {
+      "minionDamage": 8
+    },
+    "effect": ""
+  },
+  {
+    "itemID": 3187,
+    "name": "Gladiator Helmet",
+    "rarity": 0,
+    "progression": 0,
+    "defence": 5,
+    "bonus" : {},
+    "effect": ""
+  },
+  {
+    "itemID": 123,
+    "name": "Meteor Helmet",
+    "rarity": 1,
+    "progression": 0,
+    "defence": 5,
+    "bonus" : {
+      "magicDamage": 9
+    },
+    "effect": ""
+  },
+  {
+    "itemID": 228,
+    "name": "Jungle Hat",
+    "rarity": 3,
+    "progression": 0,
+    "defence": 5,
+    "bonus" : {
+      "manaCapacity": 40,
+      "magicCriticalStrikeChance": 6
+    },
+    "effect": ""
+  },
+  {
+    "itemID": 151,
+    "name": "Necro Helmet",
+    "rarity": 2,
+    "progression": 0,
+    "defence": 6,
+    "bonus" : {
+      "rangedDamage": 5
+    },
+    "effect": ""
+  },
+  {
+    "itemID": 102,
+    "name": "Shadow Helmet",
+    "rarity": 1,
+    "progression": 0,
+    "defence": 6,
+    "bonus" : {
+      "meleeSpeed": 7
+    },
+    "effect": ""
+  },
+  {
+    "itemID": 792,
+    "name": "Crimson Helmet",
+    "rarity": 1,
+    "progression": 0,
+    "defence": 6,
+    "bonus" : {
+      "damage": 2
+    },
+    "effect": ""
+  },
+  {
+    "itemID": 231,
+    "name": "Molten Helmet",
+    "rarity": 3,
+    "progression": 0,
+    "defence": 8,
+    "bonus" : {
+      "meleeCriticalStrikeChance": 7
+    },
+    "effect": ""
   }
 ]

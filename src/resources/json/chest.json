@@ -220,5 +220,104 @@
       "rangedDamage": 5
     },
     "effect": ""
+  },
+  {
+    "itemID": 2362,
+    "name": "Bee Breastplate",
+    "rarity": 3,
+    "progression": 0,
+    "defence": 5,
+    "bonus" : {
+      "minionDamage": 4,
+      "minionCapacity": 1
+    },
+    "effect": ""
+  },
+  {
+    "itemID": 3267,
+    "name": "Obsidian Longcoat",
+    "rarity": 1,
+    "progression": 0,
+    "defence": 6,
+    "bonus" : {
+      "minionCapacity": 1
+    },
+    "effect": ""
+  },
+  {
+    "itemID": 3188,
+    "name": "Gladiator Breastplate",
+    "rarity": 0,
+    "progression": 0,
+    "defence": 6,
+    "bonus" : {},
+    "effect": ""
+  },
+  {
+    "itemID": 124,
+    "name": "Meteor Suit",
+    "rarity": 1,
+    "progression": 0,
+    "defence": 6,
+    "bonus" : {
+      "magicDamage": 9
+    },
+    "effect": ""
+  },
+  {
+    "itemID": 229,
+    "name": "Jungle Shirt",
+    "rarity": 3,
+    "progression": 0,
+    "defence": 6,
+    "bonus" : {
+      "manaCapacity": 20,
+      "magicDamage": 6
+    },
+    "effect": ""
+  },
+  {
+    "itemID": 152,
+    "name": "Necro Breastplate",
+    "rarity": 2,
+    "progression": 0,
+    "defence": 7,
+    "bonus" : {
+      "rangedDamage": 5
+    },
+    "effect": ""
+  },
+  {
+    "itemID": 101,
+    "name": "Shadow Scalemail",
+    "rarity": 1,
+    "progression": 0,
+    "defence": 7,
+    "bonus" : {
+      "meleeSpeed": 7
+    },
+    "effect": ""
+  },
+  {
+    "itemID": 793,
+    "name": "Crimson Scalemail",
+    "rarity": 1,
+    "progression": 0,
+    "defence": 7,
+    "bonus" : {
+      "damage": 2
+    },
+    "effect": ""
+  },
+  {
+    "itemID": 232,
+    "name": "Molten Breastplate",
+    "rarity": 3,
+    "progression": 0,
+    "defence": 9,
+    "bonus" : {
+      "meleeDamage": 7
+    },
+    "effect": ""
   }
 ]
