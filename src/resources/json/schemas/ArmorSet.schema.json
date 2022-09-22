@@ -21,7 +21,7 @@
       "bonus": { "$ref": "item/Bonus.schema.json" },
       "effect": { "$ref": "item/Effect.schema.json" }
     },
-    "required": ["set"],
+    "required": ["_comment", "set", "bonus", "effect"],
     "additionalProperties": false
   }
 }
