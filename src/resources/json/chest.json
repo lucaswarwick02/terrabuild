@@ -155,5 +155,41 @@
       "criticalStrikeChance": 3
     },
     "effect": ""
+  },
+  {
+    "itemID": 81,
+    "name": "Iron Chainmail",
+    "rarity": 0,
+    "progression": 0,
+    "defence": 3,
+    "bonus" : {},
+    "effect": ""
+  },
+  {
+    "itemID": 691,
+    "name": "Lead Chainmail",
+    "rarity": 0,
+    "progression": 0,
+    "defence": 3,
+    "bonus" : {},
+    "effect": ""
+  },
+  {
+    "itemID": 82,
+    "name": "Silver Chainmail",
+    "rarity": 0,
+    "progression": 0,
+    "defence": 4,
+    "bonus" : {},
+    "effect": ""
+  },
+  {
+    "itemID": 694,
+    "name": "Tungsten Chainmail",
+    "rarity": 0,
+    "progression": 0,
+    "defence": 5,
+    "bonus" : {},
+    "effect": ""
   }
 ]

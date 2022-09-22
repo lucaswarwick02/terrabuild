@@ -146,5 +146,41 @@
       "criticalStrikeChance": 3
     },
     "effect": ""
+  },
+  {
+    "itemID": 77,
+    "name": "Iron Greaves",
+    "rarity": 0,
+    "progression": 0,
+    "defence": 2,
+    "bonus" : {},
+    "effect": ""
+  },
+  {
+    "itemID": 692,
+    "name": "Lead Greaves",
+    "rarity": 0,
+    "progression": 0,
+    "defence": 2,
+    "bonus" : {},
+    "effect": ""
+  },
+  {
+    "itemID": 78,
+    "name": "Silver Greaves",
+    "rarity": 0,
+    "progression": 0,
+    "defence": 3,
+    "bonus" : {},
+    "effect": ""
+  },
+  {
+    "itemID": 695,
+    "name": "Tungsten Greaves",
+    "rarity": 0,
+    "progression": 0,
+    "defence": 3,
+    "bonus" : {},
+    "effect": ""
   }
 ]

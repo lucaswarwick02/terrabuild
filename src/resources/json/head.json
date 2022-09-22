@@ -155,5 +155,41 @@
       "criticalStrikeChance": 3
     },
     "effect": ""
+  },
+  {
+    "itemID": 90,
+    "name": "Iron Helmet",
+    "rarity": 0,
+    "progression": 0,
+    "defence": 2,
+    "bonus" : {},
+    "effect": ""
+  },
+  {
+    "itemID": 690,
+    "name": "Lead Helmet",
+    "rarity": 0,
+    "progression": 0,
+    "defence": 3,
+    "bonus" : {},
+    "effect": ""
+  },
+  {
+    "itemID": 91,
+    "name": "Silver Helmet",
+    "rarity": 0,
+    "progression": 0,
+    "defence": 3,
+    "bonus" : {},
+    "effect": ""
+  },
+  {
+    "itemID": 693,
+    "name": "Tungsten Helmet",
+    "rarity": 0,
+    "progression": 0,
+    "defence": 4,
+    "bonus" : {},
+    "effect": ""
   }
 ]

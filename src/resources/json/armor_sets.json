@@ -94,5 +94,37 @@
       "movementSpeed": 20
     },
     "effect": "After-image effect when moving"
+  },
+  {
+    "_comment": "Iron Armor",
+    "set": [90, 81, 77],
+    "bonus": {
+      "defence": 2
+    },
+    "effect": ""
+  },
+  {
+    "_comment": "Lead Armor",
+    "set": [690, 691, 692],
+    "bonus": {
+      "defence": 3
+    },
+    "effect": ""
+  },
+  {
+    "_comment": "Silver Armor",
+    "set": [91, 82, 78],
+    "bonus": {
+      "defence": 3
+    },
+    "effect": ""
+  },
+  {
+    "_comment": "Tungsten Armor",
+    "set": [693, 694, 695],
+    "bonus": {
+      "defence": 3
+    },
+    "effect": ""
   }
 ]
