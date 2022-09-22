@@ -191,5 +191,34 @@
     "defence": 5,
     "bonus" : {},
     "effect": ""
+  },
+  {
+    "itemID": 83,
+    "name": "Gold Chainmail",
+    "rarity": 0,
+    "progression": 0,
+    "defence": 5,
+    "bonus" : {},
+    "effect": ""
+  },
+  {
+    "itemID": 697,
+    "name": "Platinum Chainmail",
+    "rarity": 0,
+    "progression": 0,
+    "defence": 6,
+    "bonus" : {},
+    "effect": ""
+  },
+  {
+    "itemID": 3375,
+    "name": "Fossil Plate",
+    "rarity": 1,
+    "progression": 0,
+    "defence": 5,
+    "bonus" : {
+      "rangedDamage": 5
+    },
+    "effect": ""
   }
 ]

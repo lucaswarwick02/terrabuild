@@ -1,6 +1,6 @@
 [
   {
-    "_comment": "Mining Armor",
+    "name": "Mining Armor",
     "set": [88, 410, 411],
     "bonus": {
       "miningSpeed": 30
@@ -8,7 +8,7 @@
     "effect": ""
   },
   {
-    "_comment": "Wood Armor",
+    "name": "Wood Armor",
     "set": [727, 728, 729],
     "bonus": {
       "defence": 1
@@ -16,7 +16,7 @@
     "effect": ""
   },
   {
-    "_comment": "Rich Mahogany Armor",
+    "name": "Rich Mahogany Armor",
     "set": [733, 734, 735],
     "bonus": {
       "defence": 1
@@ -24,7 +24,7 @@
     "effect": ""
   },
   {
-    "_comment": "Boreal Wood Armor",
+    "name": "Boreal Wood Armor",
     "set": [2509, 2510, 2511],
     "bonus": {
       "defence": 1
@@ -32,7 +32,7 @@
     "effect": ""
   },
   {
-    "_comment": "Palm Wood Armor",
+    "name": "Palm Wood Armor",
     "set": [2512, 2513, 2514],
     "bonus": {
       "defence": 1
@@ -40,7 +40,7 @@
     "effect": ""
   },
   {
-    "_comment": "Ebonwood",
+    "name": "Ebonwood",
     "set": [730, 731, 732],
     "bonus": {
       "defence": 1
@@ -48,7 +48,7 @@
     "effect": ""
   },
   {
-    "_comment": "Shadewood Armor",
+    "name": "Shadewood Armor",
     "set": [924, 925, 926],
     "bonus": {
       "defence": 1
@@ -56,7 +56,7 @@
     "effect": ""
   },
   {
-    "_comment": "Cactus Armor",
+    "name": "Cactus Armor",
     "set": [894, 895, 896],
     "bonus": {
       "thornsDamage": 15
@@ -64,7 +64,7 @@
     "effect": ""
   },
   {
-    "_comment": "Copper Armor",
+    "name": "Copper Armor",
     "set": [89, 80, 76],
     "bonus": {
       "defence": 2
@@ -72,7 +72,7 @@
     "effect": ""
   },
   {
-    "_comment": "Tin Armor",
+    "name": "Tin Armor",
     "set": [687, 688, 689],
     "bonus": {
       "defence": 2
@@ -80,7 +80,7 @@
     "effect": ""
   },
   {
-    "_comment": "Pumpkin Armor",
+    "name": "Pumpkin Armor",
     "set": [1731, 1732, 1733],
     "bonus": {
       "damageIncrease": 10
@@ -88,7 +88,7 @@
     "effect": ""
   },
   {
-    "_comment": "Ninja Armor",
+    "name": "Ninja Armor",
     "set": [256, 257, 258],
     "bonus": {
       "movementSpeed": 20
@@ -96,7 +96,7 @@
     "effect": "After-image effect when moving"
   },
   {
-    "_comment": "Iron Armor",
+    "name": "Iron Armor",
     "set": [90, 81, 77],
     "bonus": {
       "defence": 2
@@ -104,7 +104,7 @@
     "effect": ""
   },
   {
-    "_comment": "Lead Armor",
+    "name": "Lead Armor",
     "set": [690, 691, 692],
     "bonus": {
       "defence": 3
@@ -112,7 +112,7 @@
     "effect": ""
   },
   {
-    "_comment": "Silver Armor",
+    "name": "Silver Armor",
     "set": [91, 82, 78],
     "bonus": {
       "defence": 3
@@ -120,10 +120,34 @@
     "effect": ""
   },
   {
-    "_comment": "Tungsten Armor",
+    "name": "Tungsten Armor",
     "set": [693, 694, 695],
     "bonus": {
       "defence": 3
+    },
+    "effect": ""
+  },
+  {
+    "name": "Gold Armor",
+    "set": [92, 83, 79],
+    "bonus": {
+      "defence": 3
+    },
+    "effect": ""
+  },
+  {
+    "name": "Platinum Armor",
+    "set": [696, 697, 698],
+    "bonus": {
+      "defence": 4
+    },
+    "effect": ""
+  },
+  {
+    "name": "Fossil Armor",
+    "set": [3374, 3375, 3376],
+    "bonus": {
+      "chanceNotToConsumeAmmo": 20
     },
     "effect": ""
   }

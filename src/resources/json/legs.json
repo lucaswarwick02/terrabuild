@@ -182,5 +182,34 @@
     "defence": 3,
     "bonus" : {},
     "effect": ""
+  },
+  {
+    "itemID": 79,
+    "name": "Gold Greaves",
+    "rarity": 0,
+    "progression": 0,
+    "defence": 4,
+    "bonus" : {},
+    "effect": ""
+  },
+  {
+    "itemID": 698,
+    "name": "Platinum Greaves",
+    "rarity": 0,
+    "progression": 0,
+    "defence": 5,
+    "bonus" : {},
+    "effect": ""
+  },
+  {
+    "itemID": 3376,
+    "name": "Fossil Greaves",
+    "rarity": 1,
+    "progression": 0,
+    "defence": 4,
+    "bonus" : {
+      "rangedCriticalStrikeChance": 4
+    },
+    "effect": ""
   }
 ]

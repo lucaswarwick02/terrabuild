@@ -4,8 +4,8 @@
     "description": "Information for when a complete set is selected",
     "type": "object",
     "properties": {
-      "_comment": {
-        "description": "Comment to describe which armor set it is",
+      "name": {
+        "description": "Name to describe which armor set it is",
         "type": "string"
       },
       "set": {
@@ -21,7 +21,7 @@
       "bonus": { "$ref": "item/Bonus.schema.json" },
       "effect": { "$ref": "item/Effect.schema.json" }
     },
-    "required": ["_comment", "set", "bonus", "effect"],
+    "required": ["name", "set", "bonus", "effect"],
     "additionalProperties": false
   }
 }

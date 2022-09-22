@@ -1,0 +1,16 @@
+{
+    "itemID": ,
+    "name": "",
+    "rarity": 0,
+    "progression": 0,
+    "defence": ,
+    "bonus" : {},
+    "effect": ""
+}
+
+{
+    "name": "",
+    "set": [],
+    "bonus": {},
+    "effect": ""
+}
