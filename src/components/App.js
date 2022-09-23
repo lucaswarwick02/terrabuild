@@ -3,20 +3,21 @@ import BuildSummary from "./BuildSummary"
 import Header from "./Header";
 import SelectionModal from "./SelectionModal";
 import ItemButton from "./ItemButton"
-import {queryChest, queryHead, queryLegs} from "./JsonManager";
+import {queryChest, queryHead, queryLegs, queryMovementAccessory} from "./JsonManager";
 import '../css/App.css';
 
 function App() {
     // * isLoading is used for making sure that content isn't rendered
     // * until the JSON data is loaded.
     const [isLoading, setIsLoading] = useState(true);
-    const [armorModalType, setArmorModalType] = useState("head");
+    const [modalType, setModalType] = useState("head");
 
     // Stores the data that the user has selected
     const [data, setData] = useState({
         head: 0,
         chest: 0,
-        legs: 0
+        legs: 0,
+        accessory1: 0
     });
 
     // Loads the JSON data into variables after initial mount
@@ -24,28 +25,20 @@ function App() {
         setIsLoading(false);
     }, []);
 
-    /**
-     * Update the type of Armor Modal displayed
-     * @param {String} armorModalType - Either "head", "chest" or "legs"
-     * @returns {(function(): void)} - Required to work with onClick
-     */
-    const armorModalClick = armorModalType => () => {
-        setArmorModalType(armorModalType);
-        document.getElementById("armorModal").style.display = "block";
+    const selectionModalClick = modalType => () => {
+        setModalType(modalType);
+        document.getElementById("selectionModal").style.display = "block";
     }
 
-    /**
-     * Removes the Modal
-     */
     function handleClose () {
-        document.getElementById("armorModal").style.display = "none";
+        document.getElementById("selectionModal").style.display = "none";
     }
 
     /**
      * Updates the stored armor information
      * @param event - From the HTMLElement, used for determining values
      */
-    const handleArmorChange = (name, value) => {
+    const handleChange = (name, value) => {
         setData( prev => ({
             ...prev,
             [name]: parseInt(value)
@@ -61,28 +54,21 @@ function App() {
                     <div>
                         <div style={{display: "inline-block"}}>
                             <p className="itemHeader">Head</p>
-                            <ItemButton onClick={armorModalClick("head")} item={queryHead(data.head)} />
+                            <ItemButton onClick={selectionModalClick("head")} item={queryHead(data.head)} />
                         </div>
                         <div style={{display: "inline-block"}}>
                             <p className="itemHeader">Chest</p>
-                            <ItemButton onClick={armorModalClick("chest")} item={queryChest(data.chest)} />
+                            <ItemButton onClick={selectionModalClick("chest")} item={queryChest(data.chest)} />
                         </div>
                         <div style={{display: "inline-block"}}>
                             <p className="itemHeader">Legs</p>
-                            <ItemButton onClick={armorModalClick("legs")} item={queryLegs(data.legs)} />
+                            <ItemButton onClick={selectionModalClick("legs")} item={queryLegs(data.legs)} />
                         </div>
-                        <SelectionModal
-                            data={data}
-                            setData={setData}
-                            modalType={armorModalType}
-                            onItemClick={handleArmorChange}
-                        />
                     </div>
                     <div>
-                        {/* TODO This will be used for adding accessories */}
                         <div style={{display: "inline-block"}}>
                             <p className="itemHeader">Item</p>
-                            <ItemButton onClick={() => {}} item={queryHead(0)} />
+                            <ItemButton onClick={selectionModalClick("accessory1")} item={queryMovementAccessory(data.accessory1)} />
                         </div>
                         <div style={{display: "inline-block"}}>
                             <p className="itemHeader">Item</p>
@@ -100,8 +86,13 @@ function App() {
                             <p className="itemHeader">Item</p>
                             <ItemButton onClick={() => {}} item={queryHead(0)} />
                         </div>
-                        {/* TODO AccessoryModal */}
                     </div>
+                    <SelectionModal
+                        data={data}
+                        setData={setData}
+                        modalType={modalType}
+                        onItemClick={handleChange}
+                    />
                 </div>
                 <BuildSummary data={data} />
             </div>

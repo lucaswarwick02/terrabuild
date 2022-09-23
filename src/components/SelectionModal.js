@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ItemButton from './ItemButton'
-import { headData, chestData, legsData} from './JsonManager'
+import { headData, chestData, legsData, movementAccessoriesData } from './JsonManager'
 import { originalSort, sortByName, sortByRarity } from "../HelperFunctions"
 import '../css/SelectionModal.css';
 
@@ -28,6 +28,8 @@ function SelectionModal(props) {
                 return chestData.sort(originalSort);
             case "legs":
                 return legsData.sort(originalSort);
+            case "accessory1":
+                return movementAccessoriesData.sort(originalSort);
             default:
                 return headData.sort(originalSort);
         }
