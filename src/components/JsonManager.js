@@ -2,9 +2,10 @@ import headJsonData from '../resources/json/head.json';
 import chestJsonData from '../resources/json/chest.json';
 import legsJsonData from '../resources/json/legs.json';
 import armorSetsJsonData from '../resources/json/armor_sets.json'
+import movementAccessoriesJsonData from '../resources/json/movementAccessories.json';
 
 /**
- * ArmorItem config
+ * ItemButton config
  * @typedef {Object} ArmorItem - A Terraria item
  * @property {Number} itemID - Internal ID of the item
  * @property {String} name - Vanity name of the item
@@ -21,6 +22,15 @@ import armorSetsJsonData from '../resources/json/armor_sets.json'
  * @property {String} effect - Set Effect
  */
 
+/**
+ * Accessory config
+ * @typedef {Object} Accessory - A Terraria Accessory
+ * @property {Number} itemID - Internal ID of the item
+ * @property {String} name - Vanity name of the item
+ * @property {Number} rarity - Rarity used for color of the item
+ * @property {String} bonus - Bonus the item gives, not the complete set
+ */
+
 /** @type {ArmorItem[]} */
 export const headData = JSON.parse(JSON.stringify(headJsonData));
 /** @type {ArmorItem[]} */
@@ -29,6 +39,8 @@ export const chestData = JSON.parse(JSON.stringify(chestJsonData));
 export const legsData = JSON.parse(JSON.stringify(legsJsonData));
 /** @type {ArmorSetType[]} */
 export const armorSetsData = JSON.parse(JSON.stringify(armorSetsJsonData));
+/** @type {Accessory[]} */
+export const movementAccessoriesData = JSON.parse(JSON.stringify(movementAccessoriesJsonData))
 
 /**
  *
@@ -70,6 +82,20 @@ export function queryLegs(id) {
         }
     }
     return legsData[0];
+}
+
+/**
+ *
+ * @param {Number} id - Internal ID of the item
+ * @returns {Accessory} - JSON Armor Item
+ */
+export function queryMovementAccessory(id) {
+    for (const accessory of movementAccessoriesData) {
+        if (accessory.itemID === id) {
+            return accessory;
+        }
+    }
+    return movementAccessoriesData[0];
 }
 
 /**

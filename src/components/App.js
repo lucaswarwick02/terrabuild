@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import BuildSummary from "./BuildSummary"
 import Header from "./Header";
-import ArmorModal from "./ArmorModal";
-import ArmorItem from "./ArmorItem"
+import SelectionModal from "./SelectionModal";
+import ItemButton from "./ItemButton"
 import {queryChest, queryHead, queryLegs} from "./JsonManager";
 import '../css/App.css';
 
@@ -34,6 +34,25 @@ function App() {
         document.getElementById("armorModal").style.display = "block";
     }
 
+    /**
+     * Removes the Modal
+     */
+    function handleClose () {
+        document.getElementById("armorModal").style.display = "none";
+    }
+
+    /**
+     * Updates the stored armor information
+     * @param event - From the HTMLElement, used for determining values
+     */
+    const handleArmorChange = (name, value) => {
+        setData( prev => ({
+            ...prev,
+            [name]: parseInt(value)
+        }));
+        handleClose();
+    };
+
     if (!isLoading) {
         return (
             <div className="App">
@@ -42,43 +61,44 @@ function App() {
                     <div>
                         <div style={{display: "inline-block"}}>
                             <p className="itemHeader">Head</p>
-                            <ArmorItem onClick={armorModalClick("head")} item={queryHead(data.head)} />
+                            <ItemButton onClick={armorModalClick("head")} item={queryHead(data.head)} />
                         </div>
                         <div style={{display: "inline-block"}}>
                             <p className="itemHeader">Chest</p>
-                            <ArmorItem onClick={armorModalClick("chest")} item={queryChest(data.chest)} />
+                            <ItemButton onClick={armorModalClick("chest")} item={queryChest(data.chest)} />
                         </div>
                         <div style={{display: "inline-block"}}>
                             <p className="itemHeader">Legs</p>
-                            <ArmorItem onClick={armorModalClick("legs")} item={queryLegs(data.legs)} />
+                            <ItemButton onClick={armorModalClick("legs")} item={queryLegs(data.legs)} />
                         </div>
-                        <ArmorModal
+                        <SelectionModal
                             data={data}
                             setData={setData}
                             modalType={armorModalType}
+                            onItemClick={handleArmorChange}
                         />
                     </div>
                     <div>
                         {/* TODO This will be used for adding accessories */}
                         <div style={{display: "inline-block"}}>
                             <p className="itemHeader">Item</p>
-                            <ArmorItem onClick={() => {}} item={queryHead(0)} />
+                            <ItemButton onClick={() => {}} item={queryHead(0)} />
                         </div>
                         <div style={{display: "inline-block"}}>
                             <p className="itemHeader">Item</p>
-                            <ArmorItem onClick={() => {}} item={queryHead(0)} />
+                            <ItemButton onClick={() => {}} item={queryHead(0)} />
                         </div>
                         <div style={{display: "inline-block"}}>
                             <p className="itemHeader">Item</p>
-                            <ArmorItem onClick={() => {}} item={queryHead(0)} />
+                            <ItemButton onClick={() => {}} item={queryHead(0)} />
                         </div>
                         <div style={{display: "inline-block"}}>
                             <p className="itemHeader">Item</p>
-                            <ArmorItem onClick={() => {}} item={queryHead(0)} />
+                            <ItemButton onClick={() => {}} item={queryHead(0)} />
                         </div>
                         <div style={{display: "inline-block"}}>
                             <p className="itemHeader">Item</p>
-                            <ArmorItem onClick={() => {}} item={queryHead(0)} />
+                            <ItemButton onClick={() => {}} item={queryHead(0)} />
                         </div>
                         {/* TODO AccessoryModal */}
                     </div>

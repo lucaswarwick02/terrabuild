@@ -1,14 +1,8 @@
 import React from 'react';
-import '../css/ArmorItem.css'
+import '../css/ItemButton.css'
 import { getRarityColor } from "../HelperFunctions"
 
-/**
- * Required props:
- *      - onClick(modalType, item.itemID)
- *      - item
- *      - modalType
- */
-function ArmorItem(props) {
+function ItemButton(props) {
 
     const style = {
         color: getRarityColor(props.item.rarity),
@@ -30,4 +24,4 @@ function ArmorItem(props) {
     );
 }
 
-export default ArmorItem;
+export default ItemButton;

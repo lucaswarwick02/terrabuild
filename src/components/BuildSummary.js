@@ -44,9 +44,9 @@ function BuildSummary(props) {
         <div id="buildSummary">
             <div className="summarySection" id="armorSummary">
                 <h4>Armor Summary</h4>
-                <p style={getStyle("armorSummary")} >Armor Defence: {totalArmor}</p>
-                {complexBonusToArray(combinedBonuses).map(s => (<p style={getStyle("armorSummary")} >{s}</p>))}
-                <p style={getStyle("armorSummary")} >{setEffect}</p>
+                {/*<p style={getStyle("armorSummary")} >Armor Defence: {totalArmor}</p>*/}
+                {/*{complexBonusToArray(combinedBonuses).map(s => (<p style={getStyle("armorSummary")} >{s}</p>))}*/}
+                {/*<p style={getStyle("armorSummary")} >{setEffect}</p>*/}
             </div><div className="summarySection" id="accessorySummary">
                 <h4>Accessory Summary</h4>
             </div><div className="summarySection" id="totalSummary">

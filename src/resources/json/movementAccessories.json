@@ -1,3 +1,18 @@
 [
-
+  {
+    "itemID": 0,
+    "name": "None",
+    "rarity": -1,
+    "progression": 0,
+    "bonus": {}
+  },
+  {
+    "itemID": 285,
+    "name": "Aglet",
+    "rarity": 0,
+    "progression": 0,
+    "bonus": {
+      "movementSpeed": 5
+    }
+  }
 ]
