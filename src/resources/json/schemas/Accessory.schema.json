@@ -1,0 +1,16 @@
+{
+  "type": "array",
+  "items": {
+    "description": "Accessory information",
+    "type": "object",
+    "properties": {
+      "itemID": { "$ref": "item/ID.schema.json" },
+      "name": { "$ref": "item/Name.schema.json" },
+      "rarity": { "$ref": "item/Rarity.schema.json" },
+      "progression": { "$ref": "item/Progression.schema.json" },
+      "bonus": { "$ref": "item/Bonus.schema.json" }
+    },
+    "required": ["itemID", "name", "rarity", "progression", "bonus"],
+    "additionalProperties": false
+  }
+}
