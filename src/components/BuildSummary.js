@@ -1,7 +1,7 @@
 import '../css/BuildSummary.css';
 import React from 'react';
 import { queryHead, queryChest, queryLegs, querySetBonus, querySetEffect } from './JsonManager'
-import { complexBonusToString, combineComplexBonuses } from '../HelperFunctions'
+import { complexBonusToArray, combineComplexBonuses } from '../HelperFunctions'
 
 function BuildSummary(props) {
 
@@ -28,18 +28,31 @@ function BuildSummary(props) {
 
     const combinedBonuses = combineComplexBonuses([headBonus, chestBonus, legsBonus, setBonus])
 
+    const getStyle = id => {
+        const numberOfLines = document.getElementById(id).childElementCount - 1;
+
+        if (numberOfLines >= 10) {
+            return { fontSize: "1.5vh" };
+        }
+        else {
+            return { fontSize: "2.5vh" }
+        }
+    };
+
+
     return (
         <div id="buildSummary">
-            <h3>Build Summary</h3>
+            <div className="summarySection" id="armorSummary">
+                <h4>Armor Summary</h4>
+                <p style={getStyle("armorSummary")} >Armor Defence: {totalArmor}</p>
+                {complexBonusToArray(combinedBonuses).map(s => (<p style={getStyle("armorSummary")} >{s}</p>))}
+                <p style={getStyle("armorSummary")} >{setEffect}</p>
+            </div><div className="summarySection" id="accessorySummary">
+                <h4>Accessory Summary</h4>
+            </div><div className="summarySection" id="totalSummary">
+                <h4>Total Summary</h4>
+            </div>
 
-            <p><span style={{textDecoration: "underline"}}>Total Armor:</span></p>
-            <p>{totalArmor}</p>
-
-            {combinedBonuses && <p><span style={{textDecoration: "underline"}}>Bonuses:</span></p>}
-            {combinedBonuses && <p>{complexBonusToString(combinedBonuses)}</p>}
-
-            {setEffect && <p><span style={{textDecoration: "underline"}}>Effects:</span></p>}
-            {setEffect && <p>{setEffect}</p>}
         </div>
     );
 }

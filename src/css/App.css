@@ -1,7 +1,7 @@
 :root {
   --background: #121212;
   --surface: #1e1e1e;
-  --primary: #73ff56;
+  --primary: #a1a1a1;
   --secondary: #03dac6;
   --on-background: #dddddd;
   --on-surface: #e2e2e2;
@@ -26,7 +26,49 @@
   box-shadow: 0 0 0 2px var(--primary); /* emulate the border */
 }
 
+.itemHeader {
+  margin: 10px 5px 5px;
+  color: var(--on-background);
+}
+
 select {
   font-family: TerrariaFont, serif;
   font-size: 3vh;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary) var(--on-primary);
+}
+
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+  width: 10px;
+}
+*::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: var(--on-primary);
+}
+
+*::-webkit-scrollbar-track:hover {
+  background-color: var(--on-primary);
+}
+
+*::-webkit-scrollbar-track:active {
+  background-color: var(--on-primary);
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: var(--primary);
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: var(--primary);
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: var(--primary);
 }

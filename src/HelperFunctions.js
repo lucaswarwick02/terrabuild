@@ -132,13 +132,8 @@ export const bonusToString = (name, value) => {
     }
 }
 
-export const complexBonusToString = complexBonus => {
-    let bonusText = "";
-    Object.keys(complexBonus).forEach((value, index) => {
-        bonusText += bonusToString(value, complexBonus[value]);
-    });
-
-    return bonusText;
+export const complexBonusToArray = complexBonus => {
+    return Object.keys(complexBonus).map(key => { return bonusToString(key, complexBonus[key]); });
 }
 
 /**

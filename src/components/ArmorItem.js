@@ -13,6 +13,7 @@ function ArmorItem(props) {
     const style = {
         color: getRarityColor(props.item.rarity),
         borderColor: getRarityColor(props.item.rarity)
+
     };
 
     return (
@@ -22,7 +23,7 @@ function ArmorItem(props) {
              style={style}>
             <div className="itemImageContainer">
                 {(props.item.itemID !== 0) && <img className="itemImage" src={`${process.env.PUBLIC_URL}/images/${props.item.itemID}.png`}
-                      alt={props.item.name}/>}
+                                                   alt={props.item.name} loading="lazy"/>}
             </div>
             <span className="itemCaption" style={style}>{props.item.name}</span>
         </div>

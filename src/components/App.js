@@ -40,20 +40,46 @@ function App() {
                 <Header />
                 <div id="buildSelection">
                     <div>
-                        <ArmorItem onClick={armorModalClick("head")} item={queryHead(data.head)} />
-                        <ArmorItem onClick={armorModalClick("chest")} item={queryChest(data.chest)} />
-                        <ArmorItem onClick={armorModalClick("legs")} item={queryLegs(data.legs)} />
+                        <div style={{display: "inline-block"}}>
+                            <p className="itemHeader">Head</p>
+                            <ArmorItem onClick={armorModalClick("head")} item={queryHead(data.head)} />
+                        </div>
+                        <div style={{display: "inline-block"}}>
+                            <p className="itemHeader">Chest</p>
+                            <ArmorItem onClick={armorModalClick("chest")} item={queryChest(data.chest)} />
+                        </div>
+                        <div style={{display: "inline-block"}}>
+                            <p className="itemHeader">Legs</p>
+                            <ArmorItem onClick={armorModalClick("legs")} item={queryLegs(data.legs)} />
+                        </div>
                         <ArmorModal
                             data={data}
                             setData={setData}
                             modalType={armorModalType}
                         />
-                    </div><div>
+                    </div>
+                    <div>
                         {/* TODO This will be used for adding accessories */}
-                        <ArmorItem onClick={() => {}} item={queryHead(0)} />
-                        <ArmorItem onClick={() => {}} item={queryHead(0)} />
-                        <ArmorItem onClick={() => {}} item={queryHead(0)} /><ArmorItem onClick={() => {}} item={queryHead(0)} />
-                        <ArmorItem onClick={() => {}} item={queryHead(0)} />
+                        <div style={{display: "inline-block"}}>
+                            <p className="itemHeader">Item</p>
+                            <ArmorItem onClick={() => {}} item={queryHead(0)} />
+                        </div>
+                        <div style={{display: "inline-block"}}>
+                            <p className="itemHeader">Item</p>
+                            <ArmorItem onClick={() => {}} item={queryHead(0)} />
+                        </div>
+                        <div style={{display: "inline-block"}}>
+                            <p className="itemHeader">Item</p>
+                            <ArmorItem onClick={() => {}} item={queryHead(0)} />
+                        </div>
+                        <div style={{display: "inline-block"}}>
+                            <p className="itemHeader">Item</p>
+                            <ArmorItem onClick={() => {}} item={queryHead(0)} />
+                        </div>
+                        <div style={{display: "inline-block"}}>
+                            <p className="itemHeader">Item</p>
+                            <ArmorItem onClick={() => {}} item={queryHead(0)} />
+                        </div>
                         {/* TODO AccessoryModal */}
                     </div>
                 </div>

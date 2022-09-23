@@ -10,6 +10,11 @@
     display: inline-block;
     text-align: center;
     margin: 10px;
+    transition: transform 100ms ease-in-out;
+}
+
+.itemDisplay:hover {
+    transform: scale(1.075);
 }
 
 @media screen and (orientation: portrait) {
