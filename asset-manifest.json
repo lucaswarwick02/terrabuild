@@ -1,16 +1,16 @@
 {
-  "main.css": "/terrabuild/static/css/main.d4ec1b1d.chunk.css",
-  "main.js": "/terrabuild/static/js/main.898becae.chunk.js",
-  "main.js.map": "/terrabuild/static/js/main.898becae.chunk.js.map",
-  "static/js/1.d11720e8.chunk.js": "/terrabuild/static/js/1.d11720e8.chunk.js",
-  "static/js/1.d11720e8.chunk.js.map": "/terrabuild/static/js/1.d11720e8.chunk.js.map",
-  "static/js/2.a40d5b4d.chunk.js": "/terrabuild/static/js/2.a40d5b4d.chunk.js",
-  "static/js/2.a40d5b4d.chunk.js.map": "/terrabuild/static/js/2.a40d5b4d.chunk.js.map",
-  "runtime~main.js": "/terrabuild/static/js/runtime~main.810c3eec.js",
-  "runtime~main.js.map": "/terrabuild/static/js/runtime~main.810c3eec.js.map",
-  "static/media/App.css": "/terrabuild/static/media/ANDYB.775c3814.TTF",
-  "static/css/main.d4ec1b1d.chunk.css.map": "/terrabuild/static/css/main.d4ec1b1d.chunk.css.map",
-  "index.html": "/terrabuild/index.html",
-  "precache-manifest.c682e9f60820dd2cb490878bfb200e1f.js": "/terrabuild/precache-manifest.c682e9f60820dd2cb490878bfb200e1f.js",
-  "service-worker.js": "/terrabuild/service-worker.js"
+  "files": {
+    "main.css": "/terrabuild/static/css/main.0ee73ebd.css",
+    "main.js": "/terrabuild/static/js/main.fd9d8d12.js",
+    "static/js/787.766269e2.chunk.js": "/terrabuild/static/js/787.766269e2.chunk.js",
+    "static/media/ANDYB.TTF": "/terrabuild/static/media/ANDYB.476d3f23e498efffdbe0.TTF",
+    "index.html": "/terrabuild/index.html",
+    "main.0ee73ebd.css.map": "/terrabuild/static/css/main.0ee73ebd.css.map",
+    "main.fd9d8d12.js.map": "/terrabuild/static/js/main.fd9d8d12.js.map",
+    "787.766269e2.chunk.js.map": "/terrabuild/static/js/787.766269e2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0ee73ebd.css",
+    "static/js/main.fd9d8d12.js"
+  ]
 }
