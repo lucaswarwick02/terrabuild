@@ -1,0 +1,9 @@
+.publicBuildContainer {
+    background-color: var(--surface);
+    width: 100%;
+    height: 15vh;
+    margin-bottom: 4vh;
+    font-family: TerrariaFont;
+    font-size: 4vh;
+    color: var(--on-surface);
+}

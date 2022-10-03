@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ItemButton from './ItemButton'
-import { headData, chestData, legsData, movementAccessoriesData } from './JsonManager'
+import {headData, chestData, legsData, accessoriesData} from './JsonManager'
 import { originalSort, sortByName, sortByRarity } from "../HelperFunctions"
 import '../css/SelectionModal.css';
 
@@ -9,17 +9,6 @@ function SelectionModal(props) {
     const [filterText, setFilterText] = useState("");
     const [sortType, setSortType] = useState("None");
 
-    /**
-     * Removes the Modal
-     */
-    function handleClose () {
-        document.getElementById("armorModal").style.display = "none";
-    }
-
-    /**
-     * Get a certain set of items depending on the
-     * @returns {ItemButton[]} - Array of JSON objects for Armor Items
-     */
     const getItems = () => {
         switch (props.modalType) {
             case "head":
@@ -29,7 +18,15 @@ function SelectionModal(props) {
             case "legs":
                 return legsData.sort(originalSort);
             case "accessory1":
-                return movementAccessoriesData.sort(originalSort);
+                return accessoriesData.sort(originalSort);
+            case "accessory2":
+                return accessoriesData.sort(originalSort);
+            case "accessory3":
+                return accessoriesData.sort(originalSort);
+            case "accessory4":
+                return accessoriesData.sort(originalSort);
+            case "accessory5":
+                return accessoriesData.sort(originalSort);
             default:
                 return headData.sort(originalSort);
         }

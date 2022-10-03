@@ -8,11 +8,42 @@
     height: 7vh;
     text-align: center;
     font-family: TerrariaFont, serif;
-    box-shadow: 0 0 0 2px var(--primary); /* emulate the border */
 }
 #header h1 {
     padding-top: 1vh;
     color: var(--primary);
     margin: 0;
     font-size: 5vh;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    height: 100%;
+}
+  
+li {
+    float: left;
+    height: 100%;
+}
+  
+li span {
+    display: block;
+    color: var(--primary);
+    text-align: center;
+    text-decoration: none;
+    height: 100%;
+    width: 7.5vw;
+    margin: 0;
+    padding-top: 1.5vh;
+    font-size: 4vh;
+}
+  
+/* Change the link color to #111 (black) on hover */
+li span:hover {
+    color: var(--surface);
+    cursor: pointer;
 }

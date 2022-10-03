@@ -40,7 +40,9 @@ export const legsData = JSON.parse(JSON.stringify(legsJsonData));
 /** @type {ArmorSetType[]} */
 export const armorSetsData = JSON.parse(JSON.stringify(armorSetsJsonData));
 /** @type {Accessory[]} */
-export const movementAccessoriesData = JSON.parse(JSON.stringify(movementAccessoriesJsonData))
+const movementAccessoriesData = JSON.parse(JSON.stringify(movementAccessoriesJsonData))
+
+export const accessoriesData = [].concat(movementAccessoriesData);
 
 /**
  *
@@ -89,13 +91,13 @@ export function queryLegs(id) {
  * @param {Number} id - Internal ID of the item
  * @returns {Accessory} - JSON Armor Item
  */
-export function queryMovementAccessory(id) {
-    for (const accessory of movementAccessoriesData) {
+export function queryAccessories(id) {
+    for (const accessory of accessoriesData) {
         if (accessory.itemID === id) {
             return accessory;
         }
     }
-    return movementAccessoriesData[0];
+    return accessoriesData[0];
 }
 
 /**

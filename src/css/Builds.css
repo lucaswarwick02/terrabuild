@@ -1,0 +1,19 @@
+.buildsList {
+    width: 60vw;
+    height: 88vh;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    margin-top: 5vh;
+    overflow-y: scroll;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.buildsList::-webkit-scrollbar {
+    display: none;
+}
+  
+/* Hide scrollbar for IE, Edge and Firefox */
+.buildsList {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
